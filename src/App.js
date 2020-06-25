@@ -30,7 +30,7 @@ function App() {
         </div>
         <Footer />
       </Router>
-      {/* <CounterExample /> */}
+
     </div>
   );
 }

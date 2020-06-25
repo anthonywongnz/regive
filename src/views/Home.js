@@ -3,6 +3,8 @@ import Loader from "../components/Loader";
 import ProductCard from "../components/ProductCard";
 import { useAxiosGet } from "../hooks/HttpRequests";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   let content = null;
 
@@ -11,9 +13,14 @@ function Home() {
     <h1 className="font-bold text 2xl mb-3">Connecting you and the community to regive items to one another.</h1>
     <h2 className="">Regive is an opportunity for you to give any items, you have to others in the community who are in need for it.</h2>
     
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      Let's start regiving
-    </button>
+    
+
+
+    <Link to="/about">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Let's start regiving
+      </button>
+    </Link>
   </div>
   // const url = `https://5ec46426628c160016e7107d.mockapi.io/products?page=1&limit=10`;
 
