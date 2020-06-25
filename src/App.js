@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import CounterExample from "./components/CounterExample";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
