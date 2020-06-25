@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import About from "./views/About";
+import Donate from "./views/Donate";
+
 import Product from "./views/Product";
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/donate/">
+              <Donate />
             </Route>
             <Route path="/products/:id">
               <Product />
