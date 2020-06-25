@@ -9,10 +9,10 @@ function Home() {
   let content = null;
 
   content =
-  <div>
-    <h1 className="font-bold text 2xl mb-3">Connecting you and the community to regive items to one another.</h1>
-    <h2 className="mb-3">Regive is an opportunity for you to give any items, you have to others in the community who are in need for it.</h2>
-    
+  <div className="container">
+    <h1 className="flex justify-center font-bold text 2xl mb-3">Connecting you and the community to regive items to one another.</h1>
+    <h2 className="flex justify-center mb-3">Regive is an opportunity for you to give any items, you have to others in the community who are in need for it.</h2>
+
     <Link to="/about">
       <button className="mb-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Let's start regiving
@@ -21,7 +21,7 @@ function Home() {
 
     <hr className="mb-4" width="300"></hr>
 
-    <h3 className="mb-3">Do you have items to give away that still could be valuable for someone who may be in need for it?</h3>
+    <h3 className="flex justify-center mb-3">Do you have items to give away that still could be valuable for someone who may be in need for it?</h3>
 
     <Link to="/about">
       <button className="mb-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -60,7 +60,7 @@ function Home() {
     <h2 className="mb-3">We want to minimise the need for constant spending and connecting communities with donation charities.</h2>
 
     <h2 className="font-bold text 2xl mb-3">In once sentence:</h2>
-    <h2 className="mb-3">Regive is a site that allows you to give any items that you don’t need to others who may need it now.
+    <h2 className="mb-3 bg-yellow-200">Regive is a site that allows you to give any items that you don’t need to others who may need it now.
 www.regive.nz</h2>
 
     <Link to="/about">
@@ -75,7 +75,6 @@ www.regive.nz</h2>
 
   return (
     <div>
-      {/* <h1 className="font-bold text 2xl mb-3">Best Sellers</h1> */}
       {content}
     </div>
   );
