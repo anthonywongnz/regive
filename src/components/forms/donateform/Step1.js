@@ -3,16 +3,13 @@ import MultiSelect from "../elements/MultiSelect";
 
 //should be serverside
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'forks', label: 'Forks' },
+    { value: 'cooking dishes', label: 'Cooking Dishes' },
+    { value: 'hangers', label: 'Hangers' }
   ]
   
 
 export default class Step1 extends Component {
-    constructor() {
-        super()
-    }
 
     render() {
         if (this.props.currentStep !== 1) {
