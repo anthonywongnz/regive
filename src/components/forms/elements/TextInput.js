@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
 
 /*
 Props Required:
@@ -6,14 +6,14 @@ Props Required:
     label
     placeholder
     value
-    onChange
+    handleChange
 */
 
 export default class TextInput extends Component {
     
     render() {
         return (
-            <div class="mb-6">
+            <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
                     {this.props.label}
                 </label>

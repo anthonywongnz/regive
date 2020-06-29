@@ -22,9 +22,15 @@ export default class MasterForm extends Component {
 
     handleChange = (event) => {
         const { name, value } = event.target;
-        console.log(value);
         this.setState({
             [name]: value
+        });
+    }
+
+    updateItemList = (items) => {
+        items = items == null ? items = [] : items; 
+        this.setState({
+            itemList: items
         });
     }
 
@@ -78,11 +84,11 @@ export default class MasterForm extends Component {
 
     render() {
         return (
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div className="flex flex-wrap -mx-3 mb-6">
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
                     <Step1
                         currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
+                        handleChange={this.updateItemList}
                         itemList={this.state.itemList}
                     />
                     <Step2
