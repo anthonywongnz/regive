@@ -1,28 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import TextInput from "../elements/TextInput";
 
 export default class Step3 extends Component {
     constructor() {
         super();
-    }
-
-
-    nameInput = () => {
-        return (
-            <div>
-                <label htmlFor="name">
-                    {this.props.userType === 'individual' ? "Contact Name" : "Organisation/Business Name"}
-                </label>
-                <input
-                    className="form-control"
-                    id="contactName"
-                    name="contactName"
-                    type="text"
-                    placeholder="First and Last Name"
-                    value={this.props.userName}
-                    onChange={this.props.handleChange}
-                />
-            </div>
-        );
     }
 
     render() {
@@ -31,10 +12,40 @@ export default class Step3 extends Component {
         }
 
         return (
-            <div className="form-group">
+            <Fragment>
                 <h1>Now, we need to confirm your details.</h1>
-                {this.nameInput()}
-            </div>
+                <TextInput
+                    name="userName"
+                    label={this.props.userType === 'individual' ? "Contact Name" : "Organisation/Business Name"}
+                    placeholder="First and Last Name"
+                    value={this.props.userName}
+                    onChange={this.props.handleChange}
+                />
+                {
+                    this.props.userType === 'individual' 
+                    ? <TextInput
+                        name="userPhone"
+                        label="Contact Number"
+                        placeholder="(+Area Code)-xxx-xxx-xxx"
+                        value={this.props.userPhone}
+                        onChange={this.props.handleChange}
+                    />
+                    : <TextInput
+                        name="userIndustry"
+                        label="Industry"
+                        placeholder="Select An Industry"
+                        value={this.props.userIndustry}
+                        onChange={this.props.handleChange}
+                    />
+                }
+                <TextInput 
+                    name="userLocation"
+                    label="Current Location"
+                    placeholder="City, (State), Country"
+                    value={this.props.userLocation}
+                    onChange={this.props.handleChange}
+                />
+            </Fragment>
         );
     }
 }

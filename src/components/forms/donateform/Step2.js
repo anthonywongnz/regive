@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export default class Step2 extends Component {
     render() {
@@ -7,7 +7,7 @@ export default class Step2 extends Component {
         }
 
         return (
-            <div className="form-group" >
+            <Fragment>
                 <h1>Now, we need to confirm your details.</h1>
                 <br/>
                 <h2>Firstly, are you donating:</h2>
@@ -30,7 +30,7 @@ export default class Step2 extends Component {
                     onChange={this.props.handleChange}>
                 </input>
                 <label htmlFor="organisation"> From an organisation / business</label>
-            </div>
+            </Fragment>
         );
     }
 }

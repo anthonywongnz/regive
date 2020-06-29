@@ -12,7 +12,7 @@ export default class MasterForm extends Component {
             itemList: [],
             userType: '',
             userName: '',
-            phoneNumber: '',
+            userPhone: '',
             userLocation: '',
             userIndustry: ''
         }
@@ -78,8 +78,8 @@ export default class MasterForm extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <form onSubmit={this.handleSubmit}>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
                     <Step1
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
@@ -95,12 +95,11 @@ export default class MasterForm extends Component {
                         handleChange={this.handleChange}
                         userType={this.state.userType}
                     />
-
                     {this.previousButton}
                     {this.nextButton}
 
                 </form>
-            </React.Fragment>
+            </div>
         );
     }
 }

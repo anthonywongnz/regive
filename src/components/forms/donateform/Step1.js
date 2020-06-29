@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import TextInput from "../elements/TextInput";
 
 export default class Step1 extends Component {
     constructor() {
         super()
-
-        this.placeholderText = "Type in here as many items you are donating away. (e.g. plates; cultery; single bed; hangers) You can separate items with semicolons;"
     }
 
     render() {
@@ -13,19 +12,16 @@ export default class Step1 extends Component {
         }
 
         return (
-            <div className="form-group">
+            <Fragment>
                 <h1>Fantastic! Please list what are the items you are donating away.</h1>
-                <label htmlFor="itemList">Type in the things you are donating away:</label>
-                <input
-                    className="form-control"
-                    id="itemList"
+                <TextInput
                     name="itemList"
-                    type="text"
-                    placeholder={this.placeholderText}
+                    label="Type in the things you are donating away:"
+                    placeholder="Type in here as many items you are donating away. (e.g. plates; cultery; single bed; hangers) You can separate items with semicolons;"
                     value={this.props.itemList}
                     onChange={this.props.handleChange}
                 />
-            </div>
+            </Fragment>
         )
     }
 }
