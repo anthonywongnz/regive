@@ -11,38 +11,24 @@ Props Required:
     handleChange
 */
 
-//can use custom styling as below
-const customStyles = {
-    option: (provided, state) => ({
-      ...provided
-    }),
-    control: (provided) => ({
-      ...provided,
-      height: 100
-    }),
-    singleValue: (provided, state) => ({  
-      ...provided
-    })
-}
-
 export default class MultiSelect extends Component {
-    
+
     render() {
         return (
             <div className="mb-6">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
-                {this.props.label}
-            </label>
-            <Select
-                className="basic-multi-select"
-                classNamePrefix="select"
-                placeholder={this.props.placeholder}
-                isMulti
-                name={this.props.name}
-                options={this.props.options}
-                value={this.props.value}
-                onChange={this.props.handleChange}
-            />
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
+                    {this.props.label}
+                </label>
+                <Select
+                    className="basic-multi-select"
+                    classNamePrefix="select"
+                    placeholder={this.props.placeholder}
+                    isMulti
+                    name={this.props.name}
+                    options={this.props.options}
+                    value={this.props.value}
+                    onChange={this.props.handleChange}
+                />
             </div>
         );
     }

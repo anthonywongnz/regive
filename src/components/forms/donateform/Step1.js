@@ -6,7 +6,7 @@ const options = [
     { value: 'forks', label: 'Forks' },
     { value: 'cooking dishes', label: 'Cooking Dishes' },
     { value: 'hangers', label: 'Hangers' }
-  ]
+]
   
 
 export default class Step1 extends Component {

@@ -2,22 +2,30 @@ import React, { Component } from "react";
 import Step1 from './Step1';
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Step4 from "./Step4";
 
 export default class MasterForm extends Component {
     constructor(props) {
         super(props)
-        // Set the initial input values
         this.state = {
-            currentStep: 1, // Default is Step 1
+            currentStep: 1,
+            
+            //user details
             itemList: [],
             userType: '',
             userName: '',
             userPhone: '',
             userLocation: '',
-            userIndustry: ''
+            userIndustry: '',
+            
+            //donation details
+            donationLocation:'',
+            pickUpLocation:'',
+            ContactlessDropOff:''
+
         }
 
-        this.numSteps = 3;
+        this.numSteps = 4;
     }
 
     handleChange = (event) => {
@@ -31,6 +39,12 @@ export default class MasterForm extends Component {
         items = items == null ? items = [] : items; 
         this.setState({
             itemList: items
+        });
+    }
+
+    changeHandler = (name, value) => {
+        this.setState({
+            [name]: value
         });
     }
 
@@ -93,13 +107,18 @@ export default class MasterForm extends Component {
                     />
                     <Step2
                         currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
+                        handleChange={this.changeHandler}
                         userType={this.state.userType}
                     />
                     <Step3
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
                         userType={this.state.userType}
+                    />
+                    <Step4
+                        currentStep={this.state.currentStep}
+                        handleChange={this.changeHandler}
+                        donationLocation={this.state.donationLocation}
                     />
                     {this.previousButton}
                     {this.nextButton}
