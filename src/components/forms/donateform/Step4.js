@@ -31,11 +31,7 @@ export default class Step4 extends Component {
         )
     }
 
-    render() {
-        if (this.props.currentStep !== 4) {
-            return null;
-        }
-
+    renderHasLocations = () => {
         return (
             <Fragment>
                 <h1>Excellent! Based on the items you listed and current location. Here are places that are accepting your types of donations</h1>
@@ -50,6 +46,46 @@ export default class Step4 extends Component {
                 })
                 }
             </Fragment>
+        );
+    }
+
+    renderNoLocations = () => {
+        return (
+            <Fragment>
+                <h1>Unfortunately, there are no donating locations to accept your type of items.</h1>
+                <br />
+                <h1>However! You can still choose to offer:</h1>
+                <br />
+                <Button
+                    selected={this.props.pickupLocation === true}
+                    label="A pick up location for your items"
+                    handleClick={() => {
+                        this.props.handleChange("pickupLocation", true);
+                        this.props.handleChange("contactlessDropOff", false);
+                    }}
+                />
+
+                <Button
+                    selected={this.props.contactlessDropOff === true}
+                    label="contactlessDropOff"
+                    handleClick={() => {
+                        this.props.handleChange("pickupLocation", false);
+                        this.props.handleChange("contactlessDropOff", true);
+                    }}
+                />
+            </Fragment>
+        );
+    }
+
+    render() {
+        if (this.props.currentStep !== 4) {
+            return null;
+        }
+
+        return (
+            this.state.locations.length > 0 
+                ? this.renderHasLocations()
+                : this.renderNoLocations()
         );
     }
 }

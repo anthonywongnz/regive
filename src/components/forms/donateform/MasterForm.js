@@ -20,8 +20,8 @@ export default class MasterForm extends Component {
             
             //donation details
             donationLocation:'',
-            pickUpLocation:'',
-            ContactlessDropOff:''
+            pickupLocation:'',
+            contactlessDropOff:''
 
         }
 
@@ -119,6 +119,8 @@ export default class MasterForm extends Component {
                         currentStep={this.state.currentStep}
                         handleChange={this.changeHandler}
                         donationLocation={this.state.donationLocation}
+                        pickupLocation={this.state.pickupLocation}
+                        contactlessDropOff={this.state.contactlessDropOff}
                     />
                     {this.previousButton}
                     {this.nextButton}
