@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
+import TextInput from "../elements/TextInput";
 
 
 //should be serverside
@@ -45,6 +46,12 @@ export default class Step4 extends Component {
                     />
                 })
                 }
+
+                <Button
+                    selected={false}
+                    label="Clear Locations"
+                    handleClick={() => this.setState({ locations: [] })}
+                />
             </Fragment>
         );
     }
@@ -57,21 +64,39 @@ export default class Step4 extends Component {
                 <h1>However! You can still choose to offer:</h1>
                 <br />
                 <Button
-                    selected={this.props.pickupLocation === true}
+                    selected={this.props.donationMethod === 'pickup'}
                     label="A pick up location for your items"
                     handleClick={() => {
-                        this.props.handleChange("pickupLocation", true);
-                        this.props.handleChange("contactlessDropOff", false);
+                        this.props.handleChange("donationMethod", 'pickup');
                     }}
                 />
 
+                {this.renderPickUpLocation()}
+
                 <Button
-                    selected={this.props.contactlessDropOff === true}
+                    selected={this.props.donationMethod === 'dropoff'}
                     label="contactlessDropOff"
                     handleClick={() => {
-                        this.props.handleChange("pickupLocation", false);
-                        this.props.handleChange("contactlessDropOff", true);
+                        this.props.handleChange("donationMethod", 'dropoff');
                     }}
+                />
+            </Fragment>
+        );
+    }
+
+    renderPickUpLocation = () => {
+        if (this.props.donationMethod !== 'pickup') {
+            return null;
+        }
+        
+        return (
+            <Fragment>
+                <TextInput
+                    name="pickupLocation"
+                    label="Great! Please type in your preferred pick up location."
+                    placeholder="Type in here for your preferred pick up location for your items"
+                    value={this.props.pickupLocation}
+                    onChange={this.props.handleChange}
                 />
             </Fragment>
         );
@@ -83,7 +108,7 @@ export default class Step4 extends Component {
         }
 
         return (
-            this.state.locations.length > 0 
+            this.state.locations.length > 0
                 ? this.renderHasLocations()
                 : this.renderNoLocations()
         );
