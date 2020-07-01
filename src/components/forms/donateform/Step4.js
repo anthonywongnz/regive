@@ -40,6 +40,7 @@ export default class Step4 extends Component {
 
                 {this.state.locations.map((location) => {
                     return <Button
+                        key={location.name}    
                         selected={this.props.donationLocation.name === location.name}
                         label={this.locationLabel(location.name, location.address)}
                         handleClick={() => this.props.handleChange("donationLocation", location)}

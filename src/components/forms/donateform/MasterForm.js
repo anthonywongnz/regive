@@ -3,6 +3,8 @@ import Step1 from './Step1';
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
+import Step5 from "./Step5";
+import Review from "./Review";
 
 export default class MasterForm extends Component {
     constructor(props) {
@@ -22,11 +24,10 @@ export default class MasterForm extends Component {
             donationMethod: '', // 'direct','pickup','dropoff'
             donationLocation:'',
             pickupLocation:'',
-            contactlessDropOff:''
-
+            donationMessage:''
         }
 
-        this.numSteps = 4;
+        this.numSteps = 5;
     }
 
     handleChange = (event) => {
@@ -122,7 +123,14 @@ export default class MasterForm extends Component {
                         donationMethod={this.state.donationMethod}
                         donationLocation={this.state.donationLocation}
                         pickupLocation={this.state.pickupLocation}
-                        contactlessDropOff={this.state.contactlessDropOff}
+                    />
+                    <Step5
+                        currentStep={this.state.currentStep}
+                        handleChange={this.handleChange}
+                        itemList={this.state.donationMessage}
+                    />
+                    <Review
+                        data={this.state}
                     />
                     {this.previousButton}
                     {this.nextButton}
