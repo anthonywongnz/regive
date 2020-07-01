@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons";
 
+import Login from "./Login"
+
 function NavigationMenu(props) {
   return (
     <div>
@@ -33,6 +35,9 @@ function NavigationMenu(props) {
           >
             Donate
           </Link>
+        </li>
+        <li>
+          <Login/>
         </li>
       </ul>
     </div>
