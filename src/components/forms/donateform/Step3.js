@@ -24,9 +24,9 @@ export default class Step3 extends Component {
                 <TextInput
                     name="userName"
                     label={this.props.userType === 'individual' ? "Contact Name" : "Organisation/Business Name"}
-                    placeholder="First and Last Name"
+                    placeholder={this.props.userType === 'individual' ? "First and Last Name" : "Enter Name of Organisation"}
                     value={this.props.userName}
-                    onChange={this.props.handleChange}
+                    handleChange={this.props.handleChange}
                 />
                 {
                     this.props.userType === 'individual' 
@@ -35,15 +35,15 @@ export default class Step3 extends Component {
                         label="Contact Number"
                         placeholder="(+Area Code)-xxx-xxx-xxx"
                         value={this.props.userPhone}
-                        onChange={this.props.handleChange}
+                        handleChange={this.props.handleChange}
                     />
                     : <SingleSelect
                         name="userIndustry"
                         label="Industry"
                         placeholder="Select An Industry"
                         options={industries}
-                        value={this.props.userIndustry}
-                        onChange={this.props.handleChange}
+                        value={this.props.userIndustry.value}
+                        handleChange={(e) => this.props.handleSelection("userIndustry", e.value)}
                     />
                 }
                 <TextInput 
@@ -51,7 +51,7 @@ export default class Step3 extends Component {
                     label="Current Location"
                     placeholder="City, (State), Country"
                     value={this.props.userLocation}
-                    onChange={this.props.handleChange}
+                    handleChange={this.props.handleChange}
                 />
             </Fragment>
         );

@@ -32,7 +32,7 @@ export default class Step5 extends Component {
                             label="Type in your message below"
                             placeholder="e.g. I've only had these items for 3 months and I'm moving again. I'd rather not see it thrown as waste. Hopefully someone would find these helpful!"
                             value={this.props.donationMessage}
-                            onChange={this.props.handleChange}
+                            handleChange={this.props.handleChange}
                         />
                     </Fragment>
                     :

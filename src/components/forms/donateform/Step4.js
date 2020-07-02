@@ -43,7 +43,10 @@ export default class Step4 extends Component {
                         key={location.name}    
                         selected={this.props.donationLocation.name === location.name}
                         label={this.locationLabel(location.name, location.address)}
-                        handleClick={() => this.props.handleChange("donationLocation", location)}
+                        handleClick={() => {
+                            this.props.handleChange("donationLocation", location)
+                            this.props.handleChange("donationMethod", 'direct')
+                        }}
                     />
                 })
                 }
@@ -97,7 +100,7 @@ export default class Step4 extends Component {
                     label="Great! Please type in your preferred pick up location."
                     placeholder="Type in here for your preferred pick up location for your items"
                     value={this.props.pickupLocation}
-                    onChange={this.props.handleChange}
+                    handleChange={(event) => this.props.handleChange(event.target.name, event.target.value)}
                 />
             </Fragment>
         );

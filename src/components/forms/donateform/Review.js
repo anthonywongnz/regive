@@ -5,7 +5,7 @@ export default class Review extends Component {
 
     renderDonationMethod = () => {
         switch (this.props.data.donationMethod) {
-            case 'direct': return "Deliver to: " + this.props.data.donationLocation;
+            case 'direct': return "Deliver to: " + this.props.data.donationLocation.name;
             case 'pickup': return "Pickup from: " + this.props.data.pickupLocation;
             case 'dropoff': return "Contactless Drop Off"
             default: return ''
@@ -13,9 +13,9 @@ export default class Review extends Component {
     }
 
     render() {
-        if (this.props.currentStep !== 6) {
+        /*if (this.props.currentStep !== 6) {
             return null;
-        }
+        }*/
         
         return (
             <Fragment>

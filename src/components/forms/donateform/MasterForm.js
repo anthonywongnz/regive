@@ -27,7 +27,7 @@ export default class MasterForm extends Component {
             donationMessage:''
         }
 
-        this.numSteps = 5;
+        this.numSteps = 6;
     }
 
     handleChange = (event) => {
@@ -44,7 +44,8 @@ export default class MasterForm extends Component {
         });
     }
 
-    changeHandler = (name, value) => {
+    handleSelection = (name, value) => {
+        console.log(name)
         this.setState({
             [name]: value
         });
@@ -109,17 +110,22 @@ export default class MasterForm extends Component {
                     />
                     <Step2
                         currentStep={this.state.currentStep}
-                        handleChange={this.changeHandler}
+                        handleChange={this.handleSelection}
                         userType={this.state.userType}
                     />
                     <Step3
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
+                        handleSelection={this.handleSelection}
                         userType={this.state.userType}
+                        userName={this.state.userName}
+                        userPhone={this.state.userPhone}
+                        userIndustry={this.state.userIndustry}
+                        userLocation={this.state.userLocation}
                     />
                     <Step4
                         currentStep={this.state.currentStep}
-                        handleChange={this.changeHandler}
+                        handleChange={this.handleSelection}
                         donationMethod={this.state.donationMethod}
                         donationLocation={this.state.donationLocation}
                         pickupLocation={this.state.pickupLocation}
