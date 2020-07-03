@@ -43,7 +43,7 @@ export default class Step3 extends Component {
                         placeholder="Select An Industry"
                         options={industries}
                         value={this.props.userIndustry.value}
-                        handleChange={(e) => this.props.handleSelection("userIndustry", e.value)}
+                        handleChange={this.props.handleChange}
                     />
                 }
                 <TextInput 

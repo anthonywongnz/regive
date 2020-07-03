@@ -27,7 +27,7 @@ export default class MultiSelect extends Component {
                     name={this.props.name}
                     options={this.props.options}
                     value={this.props.value}
-                    onChange={this.props.handleChange}
+                    onChange={(value) => this.props.handleChange(this.props.name, value)}
                 />
             </div>
         );

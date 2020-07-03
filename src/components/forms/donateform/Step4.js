@@ -70,9 +70,7 @@ export default class Step4 extends Component {
                 <Button
                     selected={this.props.donationMethod === 'pickup'}
                     label="A pick up location for your items"
-                    handleClick={() => {
-                        this.props.handleChange("donationMethod", 'pickup');
-                    }}
+                    handleClick={() => this.props.handleChange("donationMethod", 'pickup')}
                 />
 
                 {this.renderPickUpLocation()}
@@ -80,9 +78,7 @@ export default class Step4 extends Component {
                 <Button
                     selected={this.props.donationMethod === 'dropoff'}
                     label="contactlessDropOff"
-                    handleClick={() => {
-                        this.props.handleChange("donationMethod", 'dropoff');
-                    }}
+                    handleClick={() => this.props.handleChange("donationMethod", 'dropoff')}
                 />
             </Fragment>
         );
@@ -100,7 +96,7 @@ export default class Step4 extends Component {
                     label="Great! Please type in your preferred pick up location."
                     placeholder="Type in here for your preferred pick up location for your items"
                     value={this.props.pickupLocation}
-                    handleChange={(event) => this.props.handleChange(event.target.name, event.target.value)}
+                    handleChange={this.props.handleChange}
                 />
             </Fragment>
         );

@@ -30,25 +30,11 @@ export default class MasterForm extends Component {
         this.numSteps = 6;
     }
 
-    handleChange = (event) => {
-        const { name, value } = event.target;
+    handleChange = (name, value) => {
+        value = value == null ? value = '' : value;
         this.setState({
             [name]: value
-        });
-    }
-
-    updateItemList = (items) => {
-        items = items == null ? items = [] : items; 
-        this.setState({
-            itemList: items
-        });
-    }
-
-    handleSelection = (name, value) => {
-        console.log(name)
-        this.setState({
-            [name]: value
-        });
+        }, () => console.log(this.state));
     }
 
     handleSubmit = (event) => {
@@ -105,18 +91,17 @@ export default class MasterForm extends Component {
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
                     <Step1
                         currentStep={this.state.currentStep}
-                        handleChange={this.updateItemList}
+                        handleChange={this.handleChange}
                         itemList={this.state.itemList}
                     />
                     <Step2
                         currentStep={this.state.currentStep}
-                        handleChange={this.handleSelection}
+                        handleChange={this.handleChange}
                         userType={this.state.userType}
                     />
                     <Step3
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
-                        handleSelection={this.handleSelection}
                         userType={this.state.userType}
                         userName={this.state.userName}
                         userPhone={this.state.userPhone}
@@ -125,7 +110,7 @@ export default class MasterForm extends Component {
                     />
                     <Step4
                         currentStep={this.state.currentStep}
-                        handleChange={this.handleSelection}
+                        handleChange={this.handleChange}
                         donationMethod={this.state.donationMethod}
                         donationLocation={this.state.donationLocation}
                         pickupLocation={this.state.pickupLocation}

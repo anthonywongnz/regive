@@ -24,7 +24,7 @@ export default class TextInput extends Component {
                     type="text"
                     placeholder={this.props.placeholder}
                     value={this.props.value}
-                    onChange={this.props.handleChange}
+                    onChange={(event) => this.props.handleChange(event.target.name, event.target.value)}
                 />
             </div>
         );
