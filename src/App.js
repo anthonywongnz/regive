@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,7 +12,7 @@ import Product from "./views/Product";
 
 function App() {
   return (
-    <div className="relative pb-10 min-h-screen">
+    <div className="relative pb-10 min-h-screen font-body">
       <Router>
         <Header />
 
