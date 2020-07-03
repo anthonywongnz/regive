@@ -16,8 +16,8 @@ export default class MultiSelect extends Component {
     render() {
         return (
             <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
-                    {this.props.label}
+                <label className="block text-sm font-bold mb-2 p-2" htmlFor={this.props.name}>
+                    <h2>{this.props.label}</h2>
                 </label>
                 <Select
                     className="basic-multi-select"

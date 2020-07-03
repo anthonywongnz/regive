@@ -89,7 +89,7 @@ export default class MasterForm extends Component {
         if (currentStep !== 1) {
             return (
                 <button
-                    className="btn btn-secondary"
+                    className="flex-1 self-center btn btn-secondary"
                     type="button" onClick={this._prev}>
                     Previous
                 </button>
@@ -103,9 +103,9 @@ export default class MasterForm extends Component {
         if (currentStep < this.numSteps) {
             return (
                 <button
-                    className="btn btn-primary float-right"
-                    type="button" onClick={this._next}>
-                    Next
+                    className="flex1 self-center btn btn-secondary"
+                    type="button">
+                    <img src="./icons/Button_Next.png" alt="Next Button" onClick={this._next}/>
                 </button>
             );
         }
@@ -114,8 +114,11 @@ export default class MasterForm extends Component {
 
     render() {
         return (
-            <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="flex content-center flex-wrap -mx-3 mb-6">
+                {this.previousButton}
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
+                
+                <hr/>
                     <Step1
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
@@ -151,15 +154,13 @@ export default class MasterForm extends Component {
                         currentStep={this.state.currentStep}
                         data={this.state}
                     />
-                    {this.previousButton}
+                    <br />
                     {this.nextButton}
-                    <br/>
-                    <Button
-                    label="Clear Form"
-                    handleClick={this.clearState}
-                />
-
                 </form>
+                <Button
+                        label="Clear Form"
+                        handleClick={this.clearState}
+                    />
             </div>
         );
     }

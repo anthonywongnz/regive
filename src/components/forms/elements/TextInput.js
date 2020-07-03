@@ -14,11 +14,11 @@ export default class TextInput extends Component {
     render() {
         return (
             <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
-                    {this.props.label}
+                <label className="block text-sm font-bold mb-2" htmlFor={this.props.name}>
+                    <h2>{this.props.label}</h2>
                 </label>
                 <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="appearance-none border-2 border-black w-full py-2 px-3 leading-tight focus:outline-none"
                     id={this.props.name}
                     name={this.props.name}
                     type="text"

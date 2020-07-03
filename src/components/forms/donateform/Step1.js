@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import MultiSelect from "../elements/MultiSelect";
+import FormHeader from "../elements/FormHeader";
 
 //should be serverside
 const options = [
@@ -18,7 +19,9 @@ export default class Step1 extends Component {
 
         return (
             <Fragment>
-                <h1>Fantastic! Please list what are the items you are donating away.</h1>
+                <FormHeader
+                    text="Fantastic! Please list what are the items you are donating away."
+                />
 
                 <MultiSelect
                     name="itemList"
