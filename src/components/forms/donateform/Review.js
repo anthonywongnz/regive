@@ -13,9 +13,9 @@ export default class Review extends Component {
     }
 
     render() {
-        /*if (this.props.currentStep !== 6) {
+        if (this.props.currentStep !== 6) {
             return null;
-        }*/
+        }
         
         return (
             <Fragment>

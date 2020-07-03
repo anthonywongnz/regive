@@ -9,9 +9,12 @@ import Review from "./Review";
 export default class MasterForm extends Component {
     constructor(props) {
         super(props)
+        this.numSteps = 6;
+        this.key = "regiveDonateFormLocalStore"
+
         this.state = {
             currentStep: 1,
-            
+
             //user details
             itemList: [],
             userType: '',
@@ -19,22 +22,41 @@ export default class MasterForm extends Component {
             userPhone: '',
             userLocation: '',
             userIndustry: '',
-            
+
             //donation details
             donationMethod: '', // 'direct','pickup','dropoff'
-            donationLocation:'',
-            pickupLocation:'',
-            donationMessage:''
+            donationLocation: '',
+            pickupLocation: '',
+            donationMessage: ''
         }
+    }
 
-        this.numSteps = 6;
+    componentDidMount() {
+        try {
+            const localStore = localStorage.getItem(this.key)
+            if (localStore !== 'undefined') {
+                this.setState(JSON.parse(localStore));
+            } else {
+                localStorage.setItem(this.key, JSON.stringify(this.state));
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    componentDidUpdate() {
+        try {
+            localStorage.setItem(this.key, JSON.stringify(this.state));
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     handleChange = (name, value) => {
         value = value == null ? value = '' : value;
         this.setState({
             [name]: value
-        }, () => console.log(this.state));
+        });
     }
 
     handleSubmit = (event) => {

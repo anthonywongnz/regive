@@ -13,7 +13,6 @@ Props Required:
 
 export default class SingleSelect extends Component {
     render() {
-        console.log(this.props.value)
         return (
             <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={this.props.name}>
