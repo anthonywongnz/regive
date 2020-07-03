@@ -148,7 +148,6 @@ export default class MasterForm extends Component {
                     />
                     {this.previousButton}
                     {this.nextButton}
-                    {this.state.currentStep}
 
                 </form>
             </div>
