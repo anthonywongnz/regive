@@ -143,10 +143,12 @@ export default class MasterForm extends Component {
                         itemList={this.state.donationMessage}
                     />
                     <Review
+                        currentStep={this.state.currentStep}
                         data={this.state}
                     />
                     {this.previousButton}
                     {this.nextButton}
+                    {this.state.currentStep}
 
                 </form>
             </div>
