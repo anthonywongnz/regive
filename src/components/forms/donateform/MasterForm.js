@@ -5,13 +5,13 @@ import Step3 from "./Step3";
 import Step4 from "./Step4";
 import Step5 from "./Step5";
 import Review from "./Review";
+import Button from "../elements/Button";
 
 export default class MasterForm extends Component {
     constructor(props) {
         super(props)
         this.numSteps = 6;
         this.key = "regiveDonateFormLocalStore"
-
         this.state = {
             currentStep: 1,
 
@@ -29,6 +29,7 @@ export default class MasterForm extends Component {
             pickupLocation: '',
             donationMessage: ''
         }
+        this.initialState = this.state;
     }
 
     componentDidMount() {
@@ -50,6 +51,10 @@ export default class MasterForm extends Component {
         } catch (error) {
             console.log(error);
         }
+    }
+
+    clearState = () => {
+        this.setState(this.initialState);
     }
 
     handleChange = (name, value) => {
@@ -148,6 +153,11 @@ export default class MasterForm extends Component {
                     />
                     {this.previousButton}
                     {this.nextButton}
+                    <br/>
+                    <Button
+                    label="Clear Form"
+                    handleClick={this.clearState}
+                />
 
                 </form>
             </div>
