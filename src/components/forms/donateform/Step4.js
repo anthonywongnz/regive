@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
 import TextArea from "../elements/TextArea";
+import FormHeader from "../elements/FormHeader";
 
 
 //should be serverside
@@ -35,8 +36,7 @@ export default class Step4 extends Component {
     renderHasLocations = () => {
         return (
             <Fragment>
-                <h1>Excellent! Based on the items you listed and current location. Here are places that are accepting your types of donations</h1>
-                <br />
+                <FormHeader text="Excellent! Based on the items you listed and current location. Here are places that are accepting your types of donations." />
 
                 {this.state.locations.map((location) => {
                     return <Button
@@ -63,10 +63,8 @@ export default class Step4 extends Component {
     renderNoLocations = () => {
         return (
             <Fragment>
-                <h1>Unfortunately, there are no donating locations to accept your type of items.</h1>
-                <br />
-                <h1>However! You can still choose to offer:</h1>
-                <br />
+                <FormHeader text="Unfortunately, there are no donating locations to accept your type of items."/>
+                <FormHeader text="However! You can still choose to offer:"/>
                 <Button
                     selected={this.props.donationMethod === 'pickup'}
                     label="A pick up location for your items"

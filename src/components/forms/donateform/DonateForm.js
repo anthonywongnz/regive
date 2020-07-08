@@ -7,7 +7,7 @@ import Step5 from "./Step5";
 import Review from "./Review";
 import Button from "../elements/Button";
 
-export default class MasterForm extends Component {
+export default class DonateForm extends Component {
     constructor(props) {
         super(props)
         this.numSteps = 6;

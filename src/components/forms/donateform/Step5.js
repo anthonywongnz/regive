@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
 import TextArea from "../elements/TextArea";
+import FormHeader from "../elements/FormHeader";
 
 export default class Step5 extends Component {
     constructor() {
@@ -19,10 +20,8 @@ export default class Step5 extends Component {
 
         return (
             <Fragment>
-                <h1>
-                    Almost done!
-                    Do you have a message to share with your donations?
-                </h1>
+                <FormHeader text="Almost done!"/>
+                <FormHeader text="Do you have a message to share with your donations?"/>
 
                 {this.state.hasMessage
                     ?
