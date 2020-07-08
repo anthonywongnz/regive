@@ -28,6 +28,11 @@
   src: url(./fonts/IBMPlexSans-Italic.ttf);
 }
 
+html {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+}
+
 h1 {
   @apply text-2xl;
   font-family: "IBM Plex Sans";
