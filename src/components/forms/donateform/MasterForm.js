@@ -2,27 +2,63 @@ import React, { Component } from "react";
 import Step1 from './Step1';
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Step4 from "./Step4";
+import Step5 from "./Step5";
+import Review from "./Review";
+import Button from "../elements/Button";
 
 export default class MasterForm extends Component {
     constructor(props) {
         super(props)
-        // Set the initial input values
+        this.numSteps = 6;
+        this.key = "regiveDonateFormLocalStore"
         this.state = {
-            currentStep: 1, // Default is Step 1
+            currentStep: 1,
+
+            //user details
             itemList: [],
             userType: '',
             userName: '',
-            phoneNumber: '',
+            userPhone: '',
             userLocation: '',
-            userIndustry: ''
-        }
+            userIndustry: '',
 
-        this.numSteps = 3;
+            //donation details
+            donationMethod: '', // 'direct','pickup','dropoff'
+            donationLocation: '',
+            pickupLocation: '',
+            donationMessage: ''
+        }
+        this.initialState = this.state;
     }
 
-    handleChange = (event) => {
-        const { name, value } = event.target;
-        console.log(value);
+    componentDidMount() {
+        try {
+            const localStore = localStorage.getItem(this.key)
+            if (localStore !== 'undefined') {
+                this.setState(JSON.parse(localStore));
+            } else {
+                localStorage.setItem(this.key, JSON.stringify(this.state));
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    componentDidUpdate() {
+        try {
+            localStorage.setItem(this.key, JSON.stringify(this.state));
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    clearState = () => {
+        this.setState(this.initialState);
+    }
+
+    handleChange = (name, value) => {
+        value = value == null ? value = '' : value;
         this.setState({
             [name]: value
         });
@@ -53,7 +89,7 @@ export default class MasterForm extends Component {
         if (currentStep !== 1) {
             return (
                 <button
-                    className="btn btn-secondary"
+                    className="flex-1 self-center btn btn-secondary"
                     type="button" onClick={this._prev}>
                     Previous
                 </button>
@@ -67,9 +103,9 @@ export default class MasterForm extends Component {
         if (currentStep < this.numSteps) {
             return (
                 <button
-                    className="btn btn-primary float-right"
-                    type="button" onClick={this._next}>
-                    Next
+                    className="flex1 self-center btn btn-secondary"
+                    type="button">
+                    <img src="./icons/Button_Next.png" alt="Next Button" onClick={this._next}/>
                 </button>
             );
         }
@@ -78,8 +114,11 @@ export default class MasterForm extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <form onSubmit={this.handleSubmit}>
+            <div className="flex content-center flex-wrap -mx-3 mb-6">
+                {this.previousButton}
+                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
+                
+                <hr/>
                     <Step1
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
@@ -94,13 +133,35 @@ export default class MasterForm extends Component {
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
                         userType={this.state.userType}
+                        userName={this.state.userName}
+                        userPhone={this.state.userPhone}
+                        userIndustry={this.state.userIndustry}
+                        userLocation={this.state.userLocation}
                     />
-
-                    {this.previousButton}
+                    <Step4
+                        currentStep={this.state.currentStep}
+                        handleChange={this.handleChange}
+                        donationMethod={this.state.donationMethod}
+                        donationLocation={this.state.donationLocation}
+                        pickupLocation={this.state.pickupLocation}
+                    />
+                    <Step5
+                        currentStep={this.state.currentStep}
+                        handleChange={this.handleChange}
+                        itemList={this.state.donationMessage}
+                    />
+                    <Review
+                        currentStep={this.state.currentStep}
+                        data={this.state}
+                    />
+                    <br />
                     {this.nextButton}
-
                 </form>
-            </React.Fragment>
+                <Button
+                        label="Clear Form"
+                        handleClick={this.clearState}
+                    />
+            </div>
         );
     }
 }

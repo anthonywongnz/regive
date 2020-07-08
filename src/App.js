@@ -12,7 +12,7 @@ import Product from "./views/Product";
 
 function App() {
   return (
-    <div className="relative pb-10 min-h-screen">
+    <div className="relative pb-10 min-h-screen font-body">
       <Router>
         <Header />
 

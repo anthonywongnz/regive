@@ -60,12 +60,16 @@ export function Login() {
       
       {loginButtonDisplayState && (
         <button
+<<<<<<< HEAD
           style={{
             fontSize: "28px",
             backgroundColor: "#4cc84c",
             border: "none",
             cursor: "pointer",
           }}
+=======
+          className="text-blue-500 py-3 border-b block"
+>>>>>>> e13142f483bbafa6f484d0b18cce62fb41f744fe
           id="login"
           onClick={loginAction}
         >

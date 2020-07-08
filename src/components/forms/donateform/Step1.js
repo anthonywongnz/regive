@@ -1,11 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import MultiSelect from "../elements/MultiSelect";
+import FormHeader from "../elements/FormHeader";
+
+//should be serverside
+const options = [
+    { value: 'forks', label: 'Forks' },
+    { value: 'cooking dishes', label: 'Cooking Dishes' },
+    { value: 'hangers', label: 'Hangers' }
+]
+  
 
 export default class Step1 extends Component {
-    constructor() {
-        super()
-
-        this.placeholderText = "Type in here as many items you are donating away. (e.g. plates; cultery; single bed; hangers) You can separate items with semicolons;"
-    }
 
     render() {
         if (this.props.currentStep !== 1) {
@@ -13,19 +18,20 @@ export default class Step1 extends Component {
         }
 
         return (
-            <div className="form-group">
-                <h1>Fantastic! Please list what are the items you are donating away.</h1>
-                <label htmlFor="itemList">Type in the things you are donating away:</label>
-                <input
-                    className="form-control"
-                    id="itemList"
-                    name="itemList"
-                    type="text"
-                    placeholder={this.placeholderText}
-                    value={this.props.itemList}
-                    onChange={this.props.handleChange}
+            <Fragment>
+                <FormHeader
+                    text="Fantastic! Please list what are the items you are donating away."
                 />
-            </div>
+
+                <MultiSelect
+                    name="itemList"
+                    label="Type in the things you are donating away:"
+                    placeholder="Type in here as many items you are donating away. (e.g. plates; cultery; single bed; hangers) You can separate items with semicolons;"
+                    options={options}
+                    value={this.props.itemList}
+                    handleChange={this.props.handleChange}
+                />
+            </Fragment>
         )
     }
 }
