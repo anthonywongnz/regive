@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
-import TextInput from "../elements/TextInput";
+import TextArea from "../elements/TextArea";
 
 export default class Step5 extends Component {
     constructor() {
@@ -27,7 +27,7 @@ export default class Step5 extends Component {
                 {this.state.hasMessage
                     ?
                     <Fragment>
-                        <TextInput
+                        <TextArea
                             name="donationMessage"
                             label="Type in your message below"
                             placeholder="e.g. I've only had these items for 3 months and I'm moving again. I'd rather not see it thrown as waste. Hopefully someone would find these helpful!"

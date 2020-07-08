@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
-import TextInput from "../elements/TextInput";
+import TextArea from "../elements/TextArea";
 
 
 //should be serverside
@@ -91,7 +91,7 @@ export default class Step4 extends Component {
         
         return (
             <Fragment>
-                <TextInput
+                <TextArea
                     name="pickupLocation"
                     label="Great! Please type in your preferred pick up location."
                     placeholder="Type in here for your preferred pick up location for your items"
