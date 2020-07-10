@@ -41,6 +41,7 @@ h1 {
   line-height: 139.5%;
   margin-bottom: 10px;
 }
+
 h2 {
   @apply text-xl;
   font-family: "IBM Plex Sans";
