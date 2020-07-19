@@ -1,11 +1,11 @@
 # Regive
-> *Regive, the opportunity to give unconditionally.
+> Regive, the opportunity to give unconditionally.
 
-This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
-
-
+*This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
