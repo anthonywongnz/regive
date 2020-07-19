@@ -17,6 +17,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5. [ Project Roadmap. ](#roadmap)
 6. [ Getting Started. ](#started)
 7. [Authors. ](#authors)
+7. [References. ](#references)
+
 
 <a name="desc"></a>
 ## 1. Regive Platform Summary
@@ -132,7 +134,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * Nicole
 * Tash 
 
-
+<a name="references"></a>
 ## 8. References 
 
 * https://www.stuff.co.nz/national/crime/117773380/how-you-could-be-fined-400-for-donating-to-an-op-shop
