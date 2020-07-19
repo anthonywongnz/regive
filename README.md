@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Table of Contents 
 
-1. [ Description. ](#desc)
+1. [ Project Summary. ](#desc)
 2. [ Demo Video. ](#video)
 3. [ Regive Architecture. ](#architecture)
 4. [ Long Description. ](#longdesc)
@@ -19,11 +19,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. [Authors. ](#authors)
 
 <a name="desc"></a>
-## 1. Description
+## 1. Regive Platform Summary
 
+1. Give
 ## What's the problem?
 
-Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
+Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it. 
+
+During the stay at home lockdown orders during the coronavirus pandemic, many people are clearing out basements, closets and bedrooms as a way to pass time. As a result, Op shops (known as "thrift stores" in America and "recycle shops" in parts of Asia) are informally reporting unprecedented volumne of donations. 
 
 ## How can technology help?
 
@@ -123,4 +126,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 <a name="authors"></a>
 ## 7. Authors
 
-* 
+* Fiona
+* Anthony
+* Minh
+* Nicole
+* Tash 
+
+
+## 8. References 
+
+* https://www.stuff.co.nz/national/crime/117773380/how-you-could-be-fined-400-for-donating-to-an-op-shop
+* https://www.japantimes.co.jp/opinion/2020/05/02/commentary/world-commentary/thrift-shops-coronavirus/#.XxTPcZ4zaUk
+* https://www.lansingstatejournal.com/story/life/2020/06/16/following-covid-19-shutdowns-thrift-secondhand-stores-may-take-longer-reopen/3177830001/
