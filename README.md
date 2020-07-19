@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
 
 <a name="Problem"></a>
-## 2. 
+## 2. Problem
 
 Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
 
