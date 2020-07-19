@@ -11,17 +11,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Table of Contents 
 
 1. [ Description. ](#desc)
-2. [ Problem. ](#usage)
+2. [ Demo Video. ](#video)
+3. [ Regive Architecture. ](#architecture)
+4. [ Long Description. ](#longdesc)
+5. [ Project Roadmap. ](#roadmap)
 
 <a name="desc"></a>
 ## 1. Description
 
+Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
+
 Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
 
-<a name="Problem"></a>
-## 2. Problem
+<a name="Demo Video."></a>
+## 2. Demo Video
 
-Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
+
+
+<a name="Regive Architecture."></a>
+## 3. Regive Architecture
+
+
+
+<a name="Long Description."></a>
+## 4. Long Description
+
+
+<a name="Project Roadmap."></a>
+## 5. Project Roadmap
+
+
 
 ## Available Scripts
 
