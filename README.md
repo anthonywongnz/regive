@@ -23,21 +23,21 @@ Constantly, people tend to purchase things that they don’t necessarily need an
 
 Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
 
-<a name="Demo Video."></a>
+<a name="video."></a>
 ## 2. Demo Video
 
 
 
-<a name="Regive Architecture."></a>
+<a name="architecture."></a>
 ## 3. Regive Architecture
 
 
 
-<a name="Long Description."></a>
+<a name="longdesc."></a>
 ## 4. Long Description
 
 
-<a name="Project Roadmap."></a>
+<a name="roadmap."></a>
 ## 5. Project Roadmap
 
 
