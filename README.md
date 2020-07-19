@@ -1,14 +1,27 @@
 # Regive
-> Regive, the opportunity to give unconditionally.
+> The opportunity to give unconditionally.
 
 This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-![Image of Regive](https://github.com/anthonywongnz/regive/blob/master/Regive.png)
+![Image of Regive](copy path)
 
+## Table of Contents 
 
+1. [ Description. ](#desc)
+2. [ Problem. ](#usage)
+
+<a name="desc"></a>
+## 1. Description
+
+Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
+
+<a name="Problem"></a>
+## 2. 
+
+Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
 
 ## Available Scripts
 
