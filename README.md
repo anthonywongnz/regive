@@ -45,6 +45,7 @@ Regive is a platform that connects an individual with their local community, cha
 ## 3. Regive Architecture
 
 
+![Image of Architecture](https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG)
 
 <a name="longdesc"></a>
 ## 4. Long Description
