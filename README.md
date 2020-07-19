@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. [ Long Description. ](#longdesc)
 5. [ Project Roadmap. ](#roadmap)
 6. [ Getting Started. ](#started)
-7. [ . ](#started)
+7. [Authors. ](#authors)
 
 <a name="desc"></a>
 ## 1. Description
@@ -52,7 +52,7 @@ Regive is a platform that connects an individual with their local community, cha
 <a name="started"></a>
 ## 6. Getting Started
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -118,3 +118,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+<a name="authors"></a>
+## 7. Authros
