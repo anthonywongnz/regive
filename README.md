@@ -34,6 +34,14 @@ During the stay at home lockdown orders during the coronavirus pandemic, many pe
 
 Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
 
+### Regive works by 
+
+1.       The user launches the Regive mobile app and can access information across multiple services.
+2.       The Recipient user answers a small survey. 
+3.       The Supplier (Donator) can post the items that are donating, as well as arrange payment options.
+4.       The Recipient user can select the item that they need. 
+5.       The Recipient user and Supplier can arrange payment options and pickup/delivery options. 
+
 <a name="video"></a>
 ## 2. Demo Video
 
@@ -46,6 +54,9 @@ Regive is a platform that connects an individual with their local community, cha
 
 ![Image of Architecture](https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG)
 
+
+
+
 <a name="longdesc"></a>
 ## 4. Long Description
 
@@ -53,6 +64,7 @@ Regive is a platform that connects an individual with their local community, cha
 <a name="roadmap"></a>
 ## 5. Project Roadmap
 
+![Image of Project Roadmap](Path.PNG)
 
 <a name="started"></a>
 ## 6. Getting Started
