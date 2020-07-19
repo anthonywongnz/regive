@@ -1,8 +1,7 @@
 # Regive
-> Regive, the opportunity to give unconditionally.
+> *Regive, the opportunity to give unconditionally.
 
-
-*This text is italicized* This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
+This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
 
 
 
