@@ -23,7 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a name="desc"></a>
 ## 1. Regive Platform Summary
 
-1. Give
+
 ## What's the problem?
 
 Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it. 
@@ -54,7 +54,8 @@ Regive is a platform that connects an individual with their local community, cha
 
 ![Image of Architecture](https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG)
 
-1. The user launche the Regive React App. 
+1. The user launches the Regive React App. 
+2. 
 
 <a name="longdesc"></a>
 ## 4. Long Description
