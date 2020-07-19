@@ -121,4 +121,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 <a name="authors"></a>
-## 7. Authros
+## 7. Authors
+
+* 
