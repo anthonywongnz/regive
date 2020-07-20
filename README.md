@@ -25,7 +25,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a name="desc"></a>
 ## 1. Regive Platform Summary
 
-
+Community collaboration between Giver and Receivers 
 
 <a name="video"></a>
 ## 2. Demo Video
@@ -41,7 +41,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <p align="center">
 <img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
 </p>
-
 
 
 1. The user launches the Regive React App. 
@@ -65,6 +64,9 @@ Rather than overflowing Charity Organisations or by selling and attempting to ea
 
 Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
 
+## The Idea 
+
+
 ## Regive works by 
 
 1.       The Recipient user launches the Regive app and can access information across multiple services.
@@ -72,13 +74,16 @@ Regive is a platform that connects an individual with their local community, cha
 3.       The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
 4.       The Recipient user can select the item that they need. 
 5.       The Recipient user and Supplier finalises pickup/delivery and payment options. 
+
+
+## 5. Project Roadmap 
 <a name="roadmap"></a>
-## 5. Project Roadmap
 
 ![Image of Project Roadmap](Path.PNG)
 
-<a name="started"></a>
+
 ## 6. Getting Started
+<a name="started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -166,3 +171,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * https://www.japantimes.co.jp/opinion/2020/05/02/commentary/world-commentary/thrift-shops-coronavirus/#.XxTPcZ4zaUk
 * https://www.lansingstatejournal.com/story/life/2020/06/16/following-covid-19-shutdowns-thrift-secondhand-stores-may-take-longer-reopen/3177830001/
 * https://www.nujournal.com/news/local-news/2020/06/13/thrift-shops-have-been-busy-since-covid-19-restrictions-lifted/
+
