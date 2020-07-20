@@ -62,7 +62,7 @@ Rather than overflowing Charity Organisations or by selling and attempting to ea
 
 ## How can technology help?
 
-Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
+As a community platform, the safety and security of our community is our main priority.
 
 ## The Idea 
 
