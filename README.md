@@ -37,9 +37,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a name="architecture"></a>
 ## 3. Regive Architecture
 
+
 <p align="center">
-![Image of Architecture](https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG)
- </p>
+<img max-height=300 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
+</p>
+
+
 
 1. The user launches the Regive React App. 
 
