@@ -51,13 +51,10 @@ Community collaboration between Giver and Receivers
 
 ## What's the problem?
 
-Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
-
-During the lockdown individuals stuck at home were able to sort through items they no longer wanted or needed, but with restrictions in place, there was no place to take them. Garage sales were not an option for those trying to maintain social distancing. This led to many communities closing charity stores and cancelling citywide garage sales. 
-
-Many charity organisations that run Op shops (known as "Thrift Shops" in the USA and "Recycle Stores" in parts of Asia) are informally reporting unprecedented volume of donations while restrictions lossen. As a result was a surplus of items. 
-
-Rather than overflowing Charity Organisations or by selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
+* Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
+* During the lockdown individuals stuck at home were able to sort through items they no longer wanted or needed, but with restrictions in place, there was no place to take them. Garage sales were not an option for those trying to maintain social distancing. This led to many communities closing charity stores and cancelling citywide garage sales. 
+* Many charity organisations that run Op shops (known as "Thrift Shops" in the USA and "Recycle Stores" in parts of Asia) are informally reporting unprecedented volume of donations while restrictions lossen. As a result was a surplus of items. 
+* Rather than overflowing Charity Organisations or by selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
 
 
 ## How can technology help?
