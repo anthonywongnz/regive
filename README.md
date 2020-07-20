@@ -40,18 +40,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![Image of Architecture](https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG)
 
 1. The user launches the Regive React App. 
-2. 
+
 
 <a name="longdesc"></a>
 ## 4. Project Description
 
 ## What's the problem?
 
-During the stay at home lockdown orders through the coronavirus pandemic, many people are clearing out basements, closets and bedrooms as a way to pass time. 
-
 Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
 
-As a result, Op shops (known as "thrift stores" in America and "recycle shops" in parts of Asia) are informally reporting unprecedented volume of donations. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
+During the lockdown individuals stuck at home were able to sort through items they no longer wanted or needed, but with restrictions in place, there was no place to take them. Garage sales were not an option for those trying to maintain social distancing. This led to many communities closing charity stores and cancelling citywide garage sales. 
+
+Many charity organisations that run Op shops (known as "Thrift Shops" in the USA and "Recycle Stores" in parts of Asia) are informally reporting unprecedented volume of donations while restrictions lossen. As a result was a surplus of items. 
+
+Rather than overflowing Charity Organisations or by selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
 
 
 ## How can technology help?
@@ -158,3 +160,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * https://www.stuff.co.nz/national/crime/117773380/how-you-could-be-fined-400-for-donating-to-an-op-shop
 * https://www.japantimes.co.jp/opinion/2020/05/02/commentary/world-commentary/thrift-shops-coronavirus/#.XxTPcZ4zaUk
 * https://www.lansingstatejournal.com/story/life/2020/06/16/following-covid-19-shutdowns-thrift-secondhand-stores-may-take-longer-reopen/3177830001/
+* https://www.nujournal.com/news/local-news/2020/06/13/thrift-shops-have-been-busy-since-covid-19-restrictions-lifted/
