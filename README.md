@@ -39,7 +39,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 <p align="center">
-<img max-height=300 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
+<img max-height=1000 height=1000  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
 </p>
 
 
