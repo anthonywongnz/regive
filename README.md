@@ -69,6 +69,8 @@ Regive is a platform that connects an individual with their local community, cha
 <a name="started"></a>
 ## 6. Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 ### Available Scripts
 
 In the project directory, you can run:
