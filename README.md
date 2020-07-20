@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Table of Contents 
 
-1. [ Project Summary. ](#desc)
+1. [ Regive Platform Summary. ](#desc)
 2. [ Demo Video. ](#video)
 3. [ Regive Architecture. ](#architecture)
 4. [ Project Description. ](#longdesc)
