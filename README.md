@@ -6,7 +6,9 @@ This is the build repository for Regive, and the README summarizes the Regive Pl
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-![Image of Regive](https://github.com/anthonywongnz/regive/blob/master/Images/Regive.png)
+<p align="center">
+<img max-height=100 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive.png"/>
+</p>
 
 ## Table of Contents 
 
