@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. [ Project Summary. ](#desc)
 2. [ Demo Video. ](#video)
 3. [ Regive Architecture. ](#architecture)
-4. [ Long Description. ](#longdesc)
+4. [ Project Description. ](#longdesc)
 5. [ Project Roadmap. ](#roadmap)
 6. [ Getting Started. ](#started)
 7. [Authors. ](#authors)
@@ -24,23 +24,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 1. Regive Platform Summary
 
 
-## What's the problem?
-
-Constantly, people tend to purchase things that they don’t necessarily need and we end up with so much materialistic things. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it. 
-
-During the stay at home lockdown orders during the coronavirus pandemic, many people are clearing out basements, closets and bedrooms as a way to pass time. As a result, Op shops (known as "thrift stores" in America and "recycle shops" in parts of Asia) are informally reporting unprecedented volumne of donations. 
-
-## How can technology help?
-
-Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
-
-## Regive works by 
-
-1.       The Recipient user launches the Regive app and can access information across multiple services.
-2.       The Recipient user answers a small survey. 
-3.       The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
-4.       The Recipient user can select the item that they need. 
-5.       The Recipient user and Supplier finalises pickup/delivery and payment options. 
 
 <a name="video"></a>
 ## 2. Demo Video
@@ -58,9 +41,28 @@ Regive is a platform that connects an individual with their local community, cha
 2. 
 
 <a name="longdesc"></a>
-## 4. Long Description
+## 4. Project Description
+
+## What's the problem?
+
+During the stay at home lockdown orders through the coronavirus pandemic, many people are clearing out basements, closets and bedrooms as a way to pass time. 
+
+Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
+
+As a result, Op shops (known as "thrift stores" in America and "recycle shops" in parts of Asia) are informally reporting unprecedented volume of donations. Rather than selling and attempting to earn a bit of monetary value, we could learn to regive our beloved items to others who may be in need of it.
 
 
+## How can technology help?
+
+Regive is a platform that connects an individual with their local community, charities and organisations that have a variety of items to regive away to those who are seeking for it.
+
+## Regive works by 
+
+1.       The Recipient user launches the Regive app and can access information across multiple services.
+2.       The Recipient user answers a small survey. 
+3.       The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
+4.       The Recipient user can select the item that they need. 
+5.       The Recipient user and Supplier finalises pickup/delivery and payment options. 
 <a name="roadmap"></a>
 ## 5. Project Roadmap
 
