@@ -84,7 +84,7 @@ As a community platform, the safety and security of our community is our main pr
 ## 06. Prototype & Demo Test
 
 Design prototype:
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEhs4glaYvqy28Cs9h7Madx%2FPrototype%3Fnode-id%3D606%253A9881%26scaling%3Dmin-zoom&chrome=DOCUMENTATION" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/proto/Ehs4glaYvqy28Cs9h7Madx/Prototype?chrome=DOCUMENTATIO&embed_host=share&kind=&node-id=606%3A9513&scaling=min-zoom" allowfullscreen></iframe>
 
 
 Full working demo:
