@@ -12,30 +12,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Table of Contents 
 
-1. [ Regive Platform Summary. ](#desc)
-2. [ Demo Video. ](#video)
-3. [ Regive Architecture. ](#architecture)
-4. [ Project Description. ](#longdesc)
-5. [ Project Roadmap. ](#roadmap)
-6. [ Getting Started. ](#started)
-7. [Authors. ](#authors)
-7. [References. ](#references)
+01. [ Regive Platform Summary. ](#desc)
+02. [ Demo Video. ](#video)
+03. [ Regive Architecture. ](#architecture)
+04. [ Project Description. ](#longdesc)
+05. [ Project Roadmap. ](#roadmap)
+06. [ Prototype & Demo Test. ](#designprototype)
+07. [ Getting Started. ](#started)
+08. [ Authors. ](#authors)
+09. [ References. ](#references)
 
 
 <a name="desc"></a>
-## 1. Regive Platform Summary
+## 01. Regive Platform Summary
 
-Community collaboration between Giver and Receivers 
+Community collaboration between Givers and Receivers for donated items.
 
 <a name="video"></a>
-## 2. Demo Video
+## 02. Demo Video
 
 
 [![Alt text for your video](pathway.jpg)](http://vimeo or YouTube)
 
 
 <a name="architecture"></a>
-## 3. Regive Architecture
+## 03. Regive Architecture
 
 
 <p align="center">
@@ -43,11 +44,11 @@ Community collaboration between Giver and Receivers
 </p>
 
 
-1. The user launches the Regive React App. 
+1. Person launches the Regive React App. 
 
 
 <a name="longdesc"></a>
-## 4. Project Description
+## 04. Project Description
 
 ## What's the problem?
 
@@ -73,13 +74,21 @@ As a community platform, the safety and security of our community is our main pr
 5.       The Recipient user and Supplier finalises pickup/delivery and payment options. 
 
 
-## 5. Project Roadmap 
 <a name="roadmap"></a>
+## 05. Project Roadmap 
 
 ![Image of Project Roadmap](Path.PNG)
 
 
-## 6. Getting Started
+<a name="designprototype"></a>
+## 06. Prototype & Demo Test
+
+Design prototype:
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEhs4glaYvqy28Cs9h7Madx%2FPrototype%3Fnode-id%3D606%253A9881%26scaling%3Dmin-zoom&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+
+Full working demo:
+## 07. Getting Started
 <a name="started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -153,7 +162,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 <a name="authors"></a>
-## 7. Authors
+## 08. Authors
 
 * Fiona
 * Anthony
@@ -161,8 +170,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * Nicole
 * Tash 
 
+
 <a name="references"></a>
-## 8. References 
+## 09. References 
 
 * https://www.stuff.co.nz/national/crime/117773380/how-you-could-be-fined-400-for-donating-to-an-op-shop
 * https://www.japantimes.co.jp/opinion/2020/05/02/commentary/world-commentary/thrift-shops-coronavirus/#.XxTPcZ4zaUk
