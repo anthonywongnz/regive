@@ -50,6 +50,9 @@ Community collaboration between Givers and Receivers for donated items.
 <a name="longdesc"></a>
 ## 04. Project Description
 
+Regive is a free website where you can cooperatively communicate within your communities of your things to donate away.
+
+
 ## What's the problem?
 
 * Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
