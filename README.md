@@ -26,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a name="desc"></a>
 ## 01. Regive Platform Summary
 
-Community collaboration between Givers and Receivers for donated items.
+*Community collaboration between Givers and Receivers for donated items.
 
 <a name="video"></a>
 ## 02. Demo Video
