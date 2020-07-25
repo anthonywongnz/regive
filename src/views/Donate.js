@@ -1,9 +1,9 @@
 import React from "react";
-import MasterForm from "../components/forms/donateform/MasterForm";
+import DonateForm from "../components/forms/donateform/DonateForm";
 
 function Donate() {
   return (
-    <MasterForm/>
+    <DonateForm/>
   );
 }
 

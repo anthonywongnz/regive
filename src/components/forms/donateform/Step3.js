@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import TextInput from "../elements/TextInput";
 import SingleSelect from "../elements/SingleSelect";
+import FormHeader from "../elements/FormHeader";
 
 //should be serverside
 const industries = [
@@ -20,7 +21,7 @@ export default class Step3 extends Component {
 
         return (
             <Fragment>
-                <h1>Now, we need to confirm your details.</h1>
+                <FormHeader text="Now, we need to confirm your details." />
                 <TextInput
                     name="userName"
                     label={this.props.userType === 'individual' ? "Contact Name" : "Organisation/Business Name"}

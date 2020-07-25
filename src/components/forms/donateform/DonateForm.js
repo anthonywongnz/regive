@@ -7,7 +7,7 @@ import Step5 from "./Step5";
 import Review from "./Review";
 import Button from "../elements/Button";
 
-export default class MasterForm extends Component {
+export default class DonateForm extends Component {
     constructor(props) {
         super(props)
         this.numSteps = 6;
@@ -89,7 +89,7 @@ export default class MasterForm extends Component {
         if (currentStep !== 1) {
             return (
                 <button
-                    className="flex-1 self-center btn btn-secondary"
+                    className="btn btn-secondary"
                     type="button" onClick={this._prev}>
                     Previous
                 </button>
@@ -102,11 +102,14 @@ export default class MasterForm extends Component {
         let currentStep = this.state.currentStep;
         if (currentStep < this.numSteps) {
             return (
-                <button
-                    className="flex1 self-center btn btn-secondary"
-                    type="button">
-                    <img src="./icons/Button_Next.png" alt="Next Button" onClick={this._next}/>
-                </button>
+                <div className="flex items-center justify-center">
+                    <button
+                        className="btn btn-secondary"
+                        type="button">
+                        <img src="./icons/Button_Next.png" alt="Next Button" onClick={this._next} />
+                    </button>
+                </div>
+
             );
         }
         return null;
@@ -114,11 +117,9 @@ export default class MasterForm extends Component {
 
     render() {
         return (
-            <div className="flex content-center flex-wrap -mx-3 mb-6">
+            <div className="justify-center max-w-lg mx-auto">
                 {this.previousButton}
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={this.handleSubmit}>
-                
-                <hr/>
                     <Step1
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
@@ -158,9 +159,9 @@ export default class MasterForm extends Component {
                     {this.nextButton}
                 </form>
                 <Button
-                        label="Clear Form"
-                        handleClick={this.clearState}
-                    />
+                    label="Clear Form"
+                    handleClick={this.clearState}
+                />
             </div>
         );
     }

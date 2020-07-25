@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
-import TextInput from "../elements/TextInput";
+import TextArea from "../elements/TextArea";
+import FormHeader from "../elements/FormHeader";
 
 export default class Step5 extends Component {
     constructor() {
@@ -19,15 +20,13 @@ export default class Step5 extends Component {
 
         return (
             <Fragment>
-                <h1>
-                    Almost done!
-                    Do you have a message to share with your donations?
-                </h1>
+                <FormHeader text="Almost done!"/>
+                <FormHeader text="Do you have a message to share with your donations?"/>
 
                 {this.state.hasMessage
                     ?
                     <Fragment>
-                        <TextInput
+                        <TextArea
                             name="donationMessage"
                             label="Type in your message below"
                             placeholder="e.g. I've only had these items for 3 months and I'm moving again. I'd rather not see it thrown as waste. Hopefully someone would find these helpful!"

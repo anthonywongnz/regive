@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
+import FormHeader from "../elements/FormHeader";
 
 export default class Step2 extends Component {
     
@@ -10,8 +11,9 @@ export default class Step2 extends Component {
 
         return (
             <Fragment>
-                <h1>Now, we need to confirm your details.</h1>
-                <br/>
+                <FormHeader
+                    text="Now, we need to confirm your details."
+                />
                 <h2>Firstly, are you donating:</h2>
                 <br/>
 

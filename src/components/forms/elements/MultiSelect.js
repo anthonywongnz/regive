@@ -1,15 +1,5 @@
 import React, { Component } from 'react'
-import Select from 'react-select'
-
-/*
-Props Required:
-    name
-    label
-    placeholder
-    options
-    value
-    handleChange
-*/
+import CreatableSelect from 'react-select/creatable'
 
 export default class MultiSelect extends Component {
 
@@ -19,7 +9,7 @@ export default class MultiSelect extends Component {
                 <label className="block text-sm font-bold mb-2 p-2" htmlFor={this.props.name}>
                     <h2>{this.props.label}</h2>
                 </label>
-                <Select
+                <CreatableSelect
                     className="basic-multi-select"
                     classNamePrefix="select"
                     placeholder={this.props.placeholder}
