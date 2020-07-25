@@ -50,6 +50,9 @@ Community collaboration between Givers and Receivers for donated items.
 <a name="longdesc"></a>
 ## 04. Project Description
 
+Regive is a free website where you can cooperatively communicate within your communities of your things to donate away.
+
+
 ## What's the problem?
 
 * Constantly, people tend to purchase things that they don’t necessarily need and we end up with a lot of materialistic items. 
@@ -65,13 +68,13 @@ As a community platform, the safety and security of our community is our main pr
 ## The Idea 
 
 
-## Regive works by 
+## Regive works by:
 
-1.       The Recipient user launches the Regive app and can access information across multiple services.
-2.       The Recipient user answers a small survey. 
-3.       The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
-4.       The Recipient user can select the item that they need. 
-5.       The Recipient user and Supplier finalises pickup/delivery and payment options. 
+1. The Recipient user launches the Regive app and can access information across multiple services.
+2. The Recipient user answers a small survey. 
+3. The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
+4. The Recipient user can select the item that they need. 
+5. The Recipient user and Supplier finalises pickup/delivery and payment options. 
 
 
 <a name="roadmap"></a>
@@ -159,7 +162,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
 
 <a name="authors"></a>
 ## 08. Authors
