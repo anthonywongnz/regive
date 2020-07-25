@@ -618,6 +618,11 @@ video {
   src: url(./fonts/IBMPlexSans-Italic.ttf);
 }
 
+html {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+}
+
 h1 {
   font-size: 1.5rem;
   font-family: "IBM Plex Sans";

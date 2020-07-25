@@ -1,0 +1,16 @@
+.Home__Image {
+  width: 50vw;
+  height: auto;
+}
+
+.Image__container {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.OneSentence_Box {
+  background-color: #DFF4F3;
+  border-radius: 6px;
+  padding: 16px;
+}
