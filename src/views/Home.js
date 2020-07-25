@@ -23,8 +23,7 @@ function Home() {
     </Link>
 
     <div className="Image__container">
-      <img className="Home__Image" src="/Humaan-Giving.png" alt="Stuff"/>
-      <img className="Home__Image" src="/Humaan-Receiving.png" alt="Stuff"/>
+      <img className="Home__Image" src="/humaaans-main-landing.png" alt="Stuff"/>
     </div>
 
     <hr className="mb-4" width="300"></hr>
