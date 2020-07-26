@@ -7,25 +7,30 @@ import Step5 from "./Step5";
 import Review from "./Review";
 import Button from "../elements/Button";
 
+const CATEGORY = ['', '', '', 'Family', '', '', '', '', '', '']
 export default class DonateForm extends Component {
     constructor(props) {
         super(props)
-        this.numSteps = 6;
+        this.numSteps = 5;
         this.key = "regiveDonateFormLocalStore"
         this.state = {
             currentStep: 1,
 
             //user details
+            donationTitle: '',
             itemList: [],
+            itemCategories: '',
             userType: '',
             userName: '',
             userPhone: '',
             userLocation: '',
             userIndustry: '',
+            contactName: '',
 
             //donation details
             donationMethod: '', // 'direct','pickup','dropoff'
             donationLocation: '',
+            currentLocation: '',
             pickupLocation: '',
             donationMessage: ''
         }
@@ -55,6 +60,7 @@ export default class DonateForm extends Component {
 
     clearState = () => {
         this.setState(this.initialState);
+        localStorage.setItem(this.key, JSON.stringify(this.state));
     }
 
     handleChange = (name, value) => {
@@ -124,6 +130,8 @@ export default class DonateForm extends Component {
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
                         itemList={this.state.itemList}
+                        category={this.state.itemCategories}
+                        donationTitle={this.state.donationTitle}
                     />
                     <Step2
                         currentStep={this.state.currentStep}
@@ -133,23 +141,16 @@ export default class DonateForm extends Component {
                     <Step3
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
-                        userType={this.state.userType}
-                        userName={this.state.userName}
-                        userPhone={this.state.userPhone}
-                        userIndustry={this.state.userIndustry}
-                        userLocation={this.state.userLocation}
+                        donationMesssage={this.state.donationMessage}
                     />
                     <Step4
                         currentStep={this.state.currentStep}
                         handleChange={this.handleChange}
                         donationMethod={this.state.donationMethod}
                         donationLocation={this.state.donationLocation}
+                        contactName={this.state.contactName}
+                        currentLocation={this.state.currentLocation}
                         pickupLocation={this.state.pickupLocation}
-                    />
-                    <Step5
-                        currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
-                        itemList={this.state.donationMessage}
                     />
                     <Review
                         currentStep={this.state.currentStep}

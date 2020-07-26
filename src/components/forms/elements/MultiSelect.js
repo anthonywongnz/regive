@@ -7,7 +7,7 @@ export default class MultiSelect extends Component {
         return (
             <div className="mb-6">
                 <label className="block text-sm font-bold mb-2 p-2" htmlFor={this.props.name}>
-                    <h2>{this.props.label}</h2>
+                    <p>{this.props.label}</p>
                 </label>
                 <CreatableSelect
                     className="basic-multi-select"

@@ -10,24 +10,23 @@ export default class Step2 extends Component {
         }
 
         return (
-            <Fragment>
+            <>
                 <FormHeader
-                    text="Now, we need to confirm your details."
+                    text="Good stuff! Now we need some photos of your items that are listed for donation."
                 />
-                <h2>Firstly, are you donating:</h2>
-                <br/>
-
-                <Button
-                    selected={this.props.userType === "individual"}
-                    label="As an individual"
-                    handleClick={() => this.props.handleChange("userType", "individual")}
-                />
-                <Button
-                    selected={this.props.userType === "organisation"}
-                    label="From an organisation / business"
-                    handleClick={() => this.props.handleChange("userType", "organisation")}
-                />
-            </Fragment>
+                <p className="color-grey">
+                (we require at least 1 image)*
+                </p>
+                <a className="text-left" style={{ color: "#4A3B8D", marginBottom: 16}}>
+                    edit
+                </a>
+                <div style={{ display: 'grid', columnGap: 9, gridGap: 9, gridTemplateColumns: ' 0.5fr 0.5fr'}}>
+                    <div style={{  minHeight: 130, background: "#A2A0CE" }}></div>
+                    <div style={{  minHeight: 130, background: "#A2A0CE" }}></div>
+                    <div style={{  minHeight: 130, background: "#A2A0CE" }}></div>
+                    <div style={{  minHeight: 130, background: "#A2A0CE" }}></div>
+                </div>
+            </>
         );
     }
 }
