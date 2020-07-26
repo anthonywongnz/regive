@@ -29,20 +29,30 @@ function About() {
       <p className="mb-3 mt-3">
         The team behind Regive are not essential workers, and we’re not on the front line workers - but we’re techies, and we accept challenges to tackle on to build for.
       </p>
+      <a href="https://www.linkedin.com/in/anthonywongnz/" target="_blank" rel="noopener noreferrer">
+        <p className="mb-10 mt-10">
+          Anthony Wong
+      </p>
+      </a>
       <p className="mb-10 mt-10">
-        Anthony Wong
+        <a href="https://www.linkedin.com/in/minh-phu-lai/" target="_blank" rel="noopener noreferrer">
+          Minh Phu
+        </a>
       </p>
       <p className="mb-10 mt-10">
-        Minh Phu
+        <a href="https://www.linkedin.com/in/tashbettridge/" target="_blank" rel="noopener noreferrer">
+          Tash Bett
+        </a>
       </p>
       <p className="mb-10 mt-10">
-        Tash Bett
+        <a href="https://www.linkedin.com/in/nicoleyuelin/" target="_blank" rel="noopener noreferrer">
+          Nicole Yue-Lin
+        </a>
       </p>
       <p className="mb-10 mt-10">
-        Nicole Yue-Lin
-      </p>
-      <p className="mb-10 mt-10">
-        Fiona Lai
+        <a href="https://www.linkedin.com/in/fionayllai/" target="_blank" rel="noopener noreferrer">
+          Fiona Lai
+        </a>
       </p>
       <h4 className="font-bold mt-5 mb-5">
         Contributors

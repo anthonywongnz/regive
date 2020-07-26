@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
-import TextInput from "../elements/TextInput";
-import SingleSelect from "../elements/SingleSelect";
+import TextArea from "../elements/TextArea";
 import FormHeader from "../elements/FormHeader";
 
 //should be serverside
@@ -20,41 +19,21 @@ export default class Step3 extends Component {
         }
 
         return (
-            <Fragment>
-                <FormHeader text="Now, we need to confirm your details." />
-                <TextInput
-                    name="userName"
-                    label={this.props.userType === 'individual' ? "Contact Name" : "Organisation/Business Name"}
-                    placeholder={this.props.userType === 'individual' ? "First and Last Name" : "Enter Name of Organisation"}
-                    value={this.props.userName}
-                    handleChange={this.props.handleChange}
+            <>
+                <FormHeader text="Please add a brief note about your items being listed as a donation on Regive." />
+                <p style={{ marginBottom: 8}}>
+                    Type in your note below:
+                </p>
+                <textarea
+                    className="appearance-none border-2 border-black w-full py-2 px-3 leading-tight focus:outline-none"
+                    name="Donation Message"
+                    style={{ minHeight: 188 }}
+                    placeholder="How long have you had these items? Keep it short and to the point, as it helps others know why you are giving the items away. :) (maximum 300 characters)"
+                    value={this.props.donationMessage}
+                    rows={3}
+                    onChange={(event) => this.props.handleChange('donationMessage', event.target.value)}
                 />
-                {
-                    this.props.userType === 'individual' 
-                    ? <TextInput
-                        name="userPhone"
-                        label="Contact Number"
-                        placeholder="(+Area Code)-xxx-xxx-xxx"
-                        value={this.props.userPhone}
-                        handleChange={this.props.handleChange}
-                    />
-                    : <SingleSelect
-                        name="userIndustry"
-                        label="Industry"
-                        placeholder="Select An Industry"
-                        options={industries}
-                        value={this.props.userIndustry.value}
-                        handleChange={this.props.handleChange}
-                    />
-                }
-                <TextInput 
-                    name="userLocation"
-                    label="Current Location"
-                    placeholder="City, (State), Country"
-                    value={this.props.userLocation}
-                    handleChange={this.props.handleChange}
-                />
-            </Fragment>
+            </>
         );
     }
 }
