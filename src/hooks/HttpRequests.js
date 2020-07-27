@@ -30,7 +30,7 @@ export function useAxiosGet(url) {
   return request;
 }
 
-export function useAxiosPut(url, data) {
+export function useAxiosPut(url) {
   const data = {"name":"testname","items":['Item 1', "Item 2"]}
 
   const jwt = Cookies.get("user")
