@@ -1,103 +1,25 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+
 import Button from "../elements/Button";
-import TextArea from "../elements/TextArea";
 import FormHeader from "../elements/FormHeader";
 
-
-//should be serverside
-const locationData = [
-    { name: "Auckland Foundation", address: "Level 26, PwC Tower 188 Quay Street, Auckland CBD 1010" },
-    { name: "Auckland City Mission", address: "23 Union Street, Auckland CBD, Auckland 1010, New Zealand" },
-    { name: "Salvation Army Family Store", address: "200 Dominion Road, Mount Eden, Auckland 1024, New Zealand" }
-];
-
 export default class Step4 extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            locations: []
+            deliveryType: null,
+            location: '',
         }
     }
 
-    componentDidMount() {
-        //load locations
-        this.setState({ locations: locationData });
+    setDeliveryToPickup = () => {
+        this.setState({ deliveryType: 'pickup' })
+        this.props.handleChange("donationMethod", "pickup")
     }
 
-    locationLabel = (name, address) => {
-        return (
-            <Fragment>
-                <p>{name}</p>
-                <p>{address}</p>
-            </Fragment>
-        )
-    }
-
-    renderHasLocations = () => {
-        return (
-            <Fragment>
-                <FormHeader text="Excellent! Based on the items you listed and current location. Here are places that are accepting your types of donations." />
-
-                {this.state.locations.map((location) => {
-                    return <Button
-                        key={location.name}    
-                        selected={this.props.donationLocation.name === location.name}
-                        label={this.locationLabel(location.name, location.address)}
-                        handleClick={() => {
-                            this.props.handleChange("donationLocation", location)
-                            this.props.handleChange("donationMethod", 'direct')
-                        }}
-                    />
-                })
-                }
-
-                <Button
-                    selected={false}
-                    label="Clear Locations"
-                    handleClick={() => this.setState({ locations: [] })}
-                />
-            </Fragment>
-        );
-    }
-
-    renderNoLocations = () => {
-        return (
-            <Fragment>
-                <FormHeader text="Unfortunately, there are no donating locations to accept your type of items."/>
-                <FormHeader text="However! You can still choose to offer:"/>
-                <Button
-                    selected={this.props.donationMethod === 'pickup'}
-                    label="A pick up location for your items"
-                    handleClick={() => this.props.handleChange("donationMethod", 'pickup')}
-                />
-
-                {this.renderPickUpLocation()}
-
-                <Button
-                    selected={this.props.donationMethod === 'dropoff'}
-                    label="contactlessDropOff"
-                    handleClick={() => this.props.handleChange("donationMethod", 'dropoff')}
-                />
-            </Fragment>
-        );
-    }
-
-    renderPickUpLocation = () => {
-        if (this.props.donationMethod !== 'pickup') {
-            return null;
-        }
-        
-        return (
-            <Fragment>
-                <TextArea
-                    name="pickupLocation"
-                    label="Great! Please type in your preferred pick up location."
-                    placeholder="Type in here for your preferred pick up location for your items"
-                    value={this.props.pickupLocation}
-                    handleChange={this.props.handleChange}
-                />
-            </Fragment>
-        );
+    setDeliveryToDropoff = () => {
+        this.setState({ deliveryType: 'dropoff' })
+        this.props.handleChange("donationMethod", "dropoff")
     }
 
     render() {
@@ -106,9 +28,66 @@ export default class Step4 extends Component {
         }
 
         return (
-            this.state.locations.length > 0
-                ? this.renderHasLocations()
-                : this.renderNoLocations()
+            <>
+                <FormHeader text="Awesome! Now, we need to confirm your contact details." />
+                <h4 className="mb-5 mt-5">
+                    Contact Name
+                </h4>
+                <input
+                    className="appearance-none border-2 border-black w-full py-2 px-3 leading-tight focus:outline-none"
+                    id="contactName"
+                    name="contactName"
+                    type="text"
+                    placeholder="First and Last Name "
+                    value={this.props.contactName}
+                    onChange={(event) => this.props.handleChange("contactName", event.target.value)}
+                />
+                <h4 className="mb-5 mt-5">
+                    Current Location
+                </h4>
+                <input
+                    className="appearance-none border-2 border-black w-full py-2 px-3 leading-tight focus:outline-none"
+                    id="currentLocation"
+                    name="currentLocation"
+                    type="text"
+                    placeholder="City, (State), Country."
+                    value={this.props.currentLocation}
+                    onChange={(event) => this.props.handleChange("currentLocation", event.target.value)}
+                />
+                <h3 className="mb-5 mt-5">
+                    In light of the coronavirus (COVID-19) situation and impact it is having on all of us. We ask that you maintain safe social distancing practices.
+                </h3>
+                <p className="mb-5 mt-5">
+                    Can you choose to offer:
+                </p>
+
+                <Button
+                    selected={this.state.deliveryType === 'pickup'}
+                    label="A pick up location for your items"
+                    handleClick={this.setDeliveryToPickup}
+                />
+                <Button
+                    selected={this.state.deliveryType === 'dropoff'}
+                    label="Contactless drop off"
+                    handleClick={this.setDeliveryToDropoff}
+                />
+                {
+                    this.state.deliveryType != null && <>
+                        <h4>Please type in your preferred pick up location.</h4>
+                        <textarea
+                            className="appearance-none border-2 border-black w-full py-2 px-3 leading-tight focus:outline-none"
+                            id="pickupLocation"
+                            name={this.props.pickupLocation}
+                            type="text"
+                            placeholder="Type in your prefered pick up location for your items"
+                            value={this.props.value}
+                            row={3}
+                            style={{ minHeight: 110 }}
+                            onChange={(event) => this.props.handleChange("pickupLocation", event.target.value)}
+                        />
+                    </>
+                }
+            </>
         );
     }
 }
