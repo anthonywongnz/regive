@@ -40,17 +40,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 <p align="center">
-<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
+<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/tree/readme-edits"/>
 </p>
 
+Regive Works By:
 
-1. Person launches the Regive React App. 
+### Giver
+The Giver user creates an account or login to the Regive website.
+On the web app, they will state by listing or capturing a photo of their items and IBM AI Watson will systematically sort their donations within the application.
+HERE Maps curates to show the closest donation centers and what donations are listed within a Giver’s location. Also allows the Giver user to provide their own pickup location.
+Store listing details are on cloudant.
+
+
+### Receiver
+The Receiver user creates an account or login to the Regive website.
+The Receiver user goes on the Regive webapp and searches for what they want. When they request, it will be processed by a Cloud Function and written to Cloudant.
+The Giver user will be notified and can accept the request through the Regive application.
+ 
 
 
 <a name="longdesc"></a>
 ## 04. Project Description
 
-Regive is a free website where you can cooperatively communicate within your communities of your things to donate away.
+Regive is a free website that allows you to give any items that you don’t need to others who may need it now.
 
 
 ## What's the problem?
@@ -64,17 +76,6 @@ Regive is a free website where you can cooperatively communicate within your com
 ## How can technology help?
 
 As a community platform, the safety and security of our community is our main priority.
-
-## The Idea 
-
-
-## Regive works by:
-
-1. The Recipient user launches the Regive app and can access information across multiple services.
-2. The Recipient user answers a small survey. 
-3. The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
-4. The Recipient user can select the item that they need. 
-5. The Recipient user and Supplier finalises pickup/delivery and payment options. 
 
 
 <a name="roadmap"></a>
