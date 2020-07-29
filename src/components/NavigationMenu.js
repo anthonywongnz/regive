@@ -73,7 +73,16 @@ function NavigationMenu(props) {
             className="text-blue-500 py-3 border-b block"
             onClick={props.closeMenu}
           >
-            Donate
+            Donate at Regive
+        </Link>
+        </li>
+        <li>
+          <Link
+            to="/listing"
+            className="text-blue-500 py-3 border-b block"
+            onClick={props.closeMenu}
+          >
+            Find Donations
         </Link>
         </li>
         <li>

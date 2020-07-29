@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./views/Home";
 import About from "./views/About";
 import Donate from "./views/Donate";
-
-import Product from "./views/Product";
+import Listing from "./views/Listing";
 
 function App() {
   return (
@@ -27,8 +26,8 @@ function App() {
             <Route path="/donate/">
               <Donate />
             </Route>
-            <Route path="/products/:id">
-              <Product />
+            <Route path="/listing/">
+              <Listing />
             </Route>
           </Switch>
         </div>

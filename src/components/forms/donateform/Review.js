@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../elements/Button";
+import { useAxiosPut } from "../../../hooks/HttpRequests";
 
 export default class Review extends Component {
 
@@ -48,7 +49,7 @@ export default class Review extends Component {
                 <Button
                     label="Submit to Regive"
                     handleClick={() => {
-                        console.log("Nope");
+                        useAxiosPut('https://a18001cb.us-south.apigw.appdomain.cloud/inventory-management/items');
                     }}
                 />
             </Fragment>
