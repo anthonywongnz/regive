@@ -30,21 +30,13 @@ export function useAxiosGet(url) {
   return request;
 }
 
-export function useAxiosPut(url) {
-  const data = {"name":"testname","items":['Item 1', "Item 2"]}
-
+export function useAxiosPut(url, data) {
   const jwt = Cookies.get("user")
+  const response = axios.put(url, data, {
+    headers: {
+      Authorization: `Bearer ${jwt}`,
+    },
+  }).catch((error) => console.log(error));
 
-  useEffect(() => {
-    axios
-      .put(url, data, {
-        headers: {
-          Authorization: `Bearer ${jwt}`,
-        },
-      })
-      .then((response) => console.log(response.status))
-      .catch((error) => console.log(error));
-    })
-
-  return 'complete';
+  return response
 };

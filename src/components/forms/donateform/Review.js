@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
+import { withRouter } from 'react-router-dom'
 import Button from "../elements/Button";
 import { useAxiosPut } from "../../../hooks/HttpRequests";
 
-export default class Review extends Component {
+class Review extends Component {
 
     renderDonationMethod = () => {
         switch (this.props.data.donationMethod) {
@@ -10,6 +11,27 @@ export default class Review extends Component {
             case 'pickup': return "Pickup from: " + this.props.data.pickupLocation;
             case 'dropoff': return "Contactless Drop Off"
             default: return ''
+        }
+    }
+
+    submitForm = async () => {
+        const { title, itemCategories, itemList, contactName, location, donationMethod, pickupLocation ,message } = this.props.data
+        const data = {
+            title,
+            catergory: itemCategories,
+            items: itemList,
+            photos: [],
+            name: contactName,
+            location,
+            delivery_option: donationMethod,
+            pickup_loc: pickupLocation,
+            message
+        }
+        const request = await useAxiosPut('https://a18001cb.us-south.apigw.appdomain.cloud/inventory-management/items', data)
+        console.log(request)
+        if (request.status === 200) {
+            this.props.clearState()
+            this.props.history.push('/donated')
         }
     }
 
@@ -48,11 +70,11 @@ export default class Review extends Component {
                 </div>
                 <Button
                     label="Submit to Regive"
-                    handleClick={() => {
-                        useAxiosPut('https://a18001cb.us-south.apigw.appdomain.cloud/inventory-management/items');
-                    }}
+                    handleClick={this.submitForm}
                 />
             </Fragment>
         );
     }
 }
+
+export default withRouter(Review)
