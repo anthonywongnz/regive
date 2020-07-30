@@ -43,7 +43,7 @@ function Home() {
     <h3 className="mb-3">Have you recently moved to a new location and are in need of certain items at a low cost?</h3>
 
     <div className="flex items-center justify-center">
-      <Link to="/about">
+      <Link to="/listing">
         <button className="mb-10 bg-transparent text-black font-bold py-2 px-4 border border-black rounded" style={{ minWidth: 300}}>
           I am seeking for donations
         </button>

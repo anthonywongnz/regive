@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import { useAxiosGet } from "../hooks/HttpRequests";
 
+const url = `https://a18001cb.us-south.apigw.appdomain.cloud/inventory-management/items`;  
 function Listing() {
-  const url = `https://a18001cb.us-south.apigw.appdomain.cloud/inventory-management/items`;  
-
   let product = useAxiosGet(url);
 
   let content = null;
 
   if (product.error) {
-    console.log(product.error);
+    console.error(product.error);
     content = <p>There was a problem with retrieving this product. Are you logged in? </p>;
   }
 
