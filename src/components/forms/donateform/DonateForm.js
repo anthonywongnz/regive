@@ -7,7 +7,6 @@ import Step5 from "./Step5";
 import Review from "./Review";
 import Button from "../elements/Button";
 
-const CATEGORY = ['', '', '', 'Family', '', '', '', '', '', '']
 export default class DonateForm extends Component {
     constructor(props) {
         super(props)
@@ -155,6 +154,7 @@ export default class DonateForm extends Component {
                     <Review
                         currentStep={this.state.currentStep}
                         data={this.state}
+                        clearState={this.clearState}
                     />
                     <br />
                     {this.nextButton}

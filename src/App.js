@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Donate from "./views/Donate";
 import Listing from "./views/Listing";
+import Donated from './views/Donated'
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/donated">
+              <Donated />
             </Route>
             <Route path="/about">
               <About />
