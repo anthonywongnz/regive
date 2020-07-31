@@ -26,8 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a name="desc"></a>
 ## 01. Regive Platform Summary
 
-Community collaboration between Givers and Receivers for donated items.
-
+Regive is a platform that connect individuals to their local community to facilitate donations to those in need.
 <a name="longdesc"></a>
 ## 02. Project Description
 
@@ -167,11 +166,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 <a name="authors"></a>
 ## 08. Authors
 
-* Fiona - Project Manager and Designer https://www.linkedin.com/in/fionayllai/
-* Anthony - Team Leader and Developer https://www.linkedin.com/in/anthonywongnz/
-* Minh - Lead Developer https://www.linkedin.com/in/minh-phu-lai/
-* Nicole - Data and Researcher https://www.linkedin.com/in/nicoleyuelin/
-* Tash  - Data and Researcher https://www.linkedin.com/in/tashbettridge/
+* Fiona - Designer - Project Manager https://www.linkedin.com/in/fionayllai/
+* Anthony - Developer & Solutions Architect https://www.linkedin.com/in/anthonywongnz/
+* Minh - Lead Front-End Developer https://www.linkedin.com/in/minh-phu-lai/
+* Nicole - Data, Research, Business Strategist  https://www.linkedin.com/in/nicoleyuelin/
+* Tash  - Partners Researcher & Documenter https://www.linkedin.com/in/tashbettridge/
 
 
 <a name="references"></a>
