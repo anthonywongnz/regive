@@ -1,21 +1,18 @@
 # Regive
-> The opportunity to give unconditionally.
 
 This is the build repository for Regive, and the README summarizes the Regive Platform. Please find the Regive Platform repos, installation/build instructions and technical details at https://github.com/anthonywongnz/regive. 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 
 <p align="center">
 <img max-height=200 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive.png"/>
 </p>
 
+
 ## Table of Contents 
 
-01. [ Regive Platform Summary. ](#desc)
-02. [ Project Description. ](#longdesc)
-03. [ Regive Architecture. ](#architecture)
-04. [ Demo Video. ](#video)
+01. [ Demo Video. ](#video)
+02. [ Regive Platform Summary. ](#desc)
+03. [ Project Description. ](#longdesc)
+04. [ Regive Architecture. ](#architecture)
 05. [ Project Roadmap. ](#roadmap)
 06. [ Prototype. ](#designprototype)
 07. [ Getting Started. ](#started)
@@ -23,12 +20,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 09. [ References. ](#references)
 
 
+## 01. Demo Video
+<a name="video"></a>
+
+[![](https://img.youtube.com/vi/zJskuH4LAs4/0.jpg)](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
+
+
+## 02. Regive Platform Summary
 <a name="desc"></a>
-## 01. Regive Platform Summary
 
 Regive is a platform that connect individuals to their local community to facilitate donations to those in need.
+
+## 03. Project Description
 <a name="longdesc"></a>
-## 02. Project Description
 
 Regive is a free website that allows you to give any items that you don’t need to others who may need it now.
 
@@ -45,9 +49,8 @@ Regive is a free website that allows you to give any items that you don’t need
 As a community platform, the safety and security of our community is our main priority. Regive is a community solution which enhances community cooperation by addressing the need to support people who require items. It would allow both “Givers” (such as a store or a community member who has items they can sell or distribute) and “Receivers” who need the items to collaborate and support one another. 
 
 
+## 04. Regive Architecture
 <a name="architecture"></a>
-## 03. Regive Architecture
-
 
 <p align="center">
 <img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive_Architecture.png"/>
@@ -69,27 +72,21 @@ As a community platform, the safety and security of our community is our main pr
 7. The Giver user will be notified and can accept the request through the Regive application.
 
 
-<a name="video"></a>
-## 04. Demo Video
-
-[![](https://img.youtube.com/vi/zJskuH4LAs4/0.jpg)](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
-
-
-<a name="roadmap"></a>
 ## 05. Project Roadmap 
-
+<a name="roadmap"></a>
 
 <p align="center">
 <img max-height=700 height=600  src="https://github.com/anthonywongnz/regive/blob/master/Images/Product%20Roadmap.pptx.jpg"/>
 </p>
 
 
-<a name="designprototype"></a>
 ## 06. Prototype 
+<a name="designprototype"></a>
 
 Please sign up today to trial our prototype: https://www.notion.so/Regive-3add424fb1c541c78dfc09e0afda2115
 
-Full working demo: http://regive.s3-website-ap-southeast-2.amazonaws.com/
+Full working demo: https://regive-ibm.netlify.app
+
 
 ## 07. Getting Started
 <a name="started"></a>
