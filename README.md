@@ -79,7 +79,10 @@ As a community platform, the safety and security of our community is our main pr
 <a name="roadmap"></a>
 ## 05. Project Roadmap 
 
-![Image of Project Roadmap](Path.PNG)
+
+<p align="center">
+<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Product%20Roadmap.pptx.jpg"/>
+</p>
 
 
 <a name="designprototype"></a>
