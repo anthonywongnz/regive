@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 03. [ Regive Architecture. ](#architecture)
 04. [ Project Description. ](#longdesc)
 05. [ Project Roadmap. ](#roadmap)
-06. [ Prototype & Demo Test. ](#designprototype)
+06. [ Prototype. ](#designprototype)
 07. [ Getting Started. ](#started)
 08. [ Authors. ](#authors)
 09. [ References. ](#references)
@@ -31,10 +31,7 @@ Community collaboration between Givers and Receivers for donated items.
 <a name="video"></a>
 ## 02. Demo Video
 
-
-
-
-[<img src="https://gifs.com/gif/regive-r842mw" width="50%">](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
+[![](https://img.youtube.com/vi/zJskuH4LAs4/0.jpg)](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
 
 
 
@@ -47,7 +44,6 @@ Community collaboration between Givers and Receivers for donated items.
 </p>
 
 
-1. Person launches the Regive React App. 
 
 
 <a name="longdesc"></a>
@@ -70,14 +66,21 @@ As a community platform, the safety and security of our community is our main pr
 
 ## The Idea 
 
+Regive is a community solution which enhances community cooperation by addressing the need to support people who require items. It would allow both “Givers” (such as a store or a community member who has items they can sell or distribute) and “Receivers” who need the items to collaborate and support one another. 
 
 ## Regive works by:
 
-1. The Recipient user launches the Regive app and can access information across multiple services.
-2. The Recipient user answers a small survey. 
-3. The Supplier (Donator) can post the items that they are donating, as well as arrange pickup/delivery and payment options.
-4. The Recipient user can select the item that they need. 
-5. The Recipient user and Supplier finalises pickup/delivery and payment options. 
+### Giver
+1. The Giver user creates an account or login to the Regive website.
+2. On the web app, they will state by listing or capturing a photo of their items and IBM AI Watson will systematically sort their donations within the application.
+3. HERE Maps curates to show the closest donation centers and what donations are listed within a Giver’s location. Also allows the Giver user to provide their own pickup location.
+4. Store listing details are on cloudant.
+
+
+### Receiver
+5. The Receiver user creates an account or login to the Regive website.
+6. The Receiver user goes on the Regive webapp and searches for what they want. When they request, it will be processed by a Cloud Function and written to Cloudant.
+7. The Giver user will be notified and can accept the request through the Regive application.
 
 
 <a name="roadmap"></a>
@@ -87,10 +90,11 @@ As a community platform, the safety and security of our community is our main pr
 
 
 <a name="designprototype"></a>
-## 06. Prototype & Demo Test
+## 06. Prototype 
 
 Design prototype:
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/proto/Ehs4glaYvqy28Cs9h7Madx/Prototype?chrome=DOCUMENTATIO&embed_host=share&kind=&node-id=606%3A9513&scaling=min-zoom" allowfullscreen></iframe>
+
+Please sign up today to trial our prototype: https://www.notion.so/Regive-3add424fb1c541c78dfc09e0afda2115
 
 
 Full working demo:
