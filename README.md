@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 <p align="center">
-<img max-height=100 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive.png"/>
+<img max-height=200 height=200  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive.png"/>
 </p>
 
 ## Table of Contents 
@@ -81,19 +81,17 @@ As a community platform, the safety and security of our community is our main pr
 
 
 <p align="center">
-<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Product%20Roadmap.pptx.jpg"/>
+<img max-height=700 height=600  src="https://github.com/anthonywongnz/regive/blob/master/Images/Product%20Roadmap.pptx.jpg"/>
 </p>
 
 
 <a name="designprototype"></a>
 ## 06. Prototype 
 
-Design prototype:
-
 Please sign up today to trial our prototype: https://www.notion.so/Regive-3add424fb1c541c78dfc09e0afda2115
 
+Full working demo: http://regive.s3-website-ap-southeast-2.amazonaws.com/
 
-Full working demo:
 ## 07. Getting Started
 <a name="started"></a>
 
