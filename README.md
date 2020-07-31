@@ -32,7 +32,10 @@ Community collaboration between Givers and Receivers for donated items.
 ## 02. Demo Video
 
 
-[![Alt text for your video](pathway.jpg)](http://vimeo or YouTube)
+
+
+[<img src="https://gifs.com/gif/regive-r842mw" width="50%">](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
+
 
 
 <a name="architecture"></a>
@@ -40,7 +43,7 @@ Community collaboration between Givers and Receivers for donated items.
 
 
 <p align="center">
-<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/architecture.PNG"/>
+<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive_Architecture.png"/>
 </p>
 
 
