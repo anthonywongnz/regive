@@ -13,9 +13,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Table of Contents 
 
 01. [ Regive Platform Summary. ](#desc)
-02. [ Demo Video. ](#video)
+02. [ Project Description. ](#longdesc)
 03. [ Regive Architecture. ](#architecture)
-04. [ Project Description. ](#longdesc)
+04. [ Demo Video. ](#video)
 05. [ Project Roadmap. ](#roadmap)
 06. [ Prototype. ](#designprototype)
 07. [ Getting Started. ](#started)
@@ -28,29 +28,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Community collaboration between Givers and Receivers for donated items.
 
-<a name="video"></a>
-## 02. Demo Video
-
-[![](https://img.youtube.com/vi/zJskuH4LAs4/0.jpg)](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
-
-
-
-<a name="architecture"></a>
-## 03. Regive Architecture
-
-
-<p align="center">
-<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive_Architecture.png"/>
-</p>
-
-
-
-
 <a name="longdesc"></a>
-## 04. Project Description
+## 02. Project Description
 
-Regive is a free website where you can cooperatively communicate within your communities of your things to donate away.
-
+Regive is a free website that allows you to give any items that you don’t need to others who may need it now.
 
 ## What's the problem?
 
@@ -62,11 +43,17 @@ Regive is a free website where you can cooperatively communicate within your com
 
 ## How can technology help?
 
-As a community platform, the safety and security of our community is our main priority.
+As a community platform, the safety and security of our community is our main priority. Regive is a community solution which enhances community cooperation by addressing the need to support people who require items. It would allow both “Givers” (such as a store or a community member who has items they can sell or distribute) and “Receivers” who need the items to collaborate and support one another. 
 
-## The Idea 
 
-Regive is a community solution which enhances community cooperation by addressing the need to support people who require items. It would allow both “Givers” (such as a store or a community member who has items they can sell or distribute) and “Receivers” who need the items to collaborate and support one another. 
+<a name="architecture"></a>
+## 03. Regive Architecture
+
+
+<p align="center">
+<img max-height=800 height=800  src="https://github.com/anthonywongnz/regive/blob/master/Images/Regive_Architecture.png"/>
+</p>
+
 
 ## Regive works by:
 
@@ -81,6 +68,12 @@ Regive is a community solution which enhances community cooperation by addressin
 5. The Receiver user creates an account or login to the Regive website.
 6. The Receiver user goes on the Regive webapp and searches for what they want. When they request, it will be processed by a Cloud Function and written to Cloudant.
 7. The Giver user will be notified and can accept the request through the Regive application.
+
+
+<a name="video"></a>
+## 04. Demo Video
+
+[![](https://img.youtube.com/vi/zJskuH4LAs4/0.jpg)](https://www.youtube.com/watch?v=zJskuH4LAs4&feature=youtu.be&fbclid=IwAR00sc6oPb-jgrDliQjVXH1LTPIsIP3h-A4PQCzXbyoDtFVEDryCdYdMY1A)
 
 
 <a name="roadmap"></a>
@@ -173,15 +166,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 <a name="authors"></a>
 ## 08. Authors
 
-* Fiona
-* Anthony
-* Minh
-* Nicole
-* Tash 
+* Fiona - Project Manager and Designer https://www.linkedin.com/in/fionayllai/
+* Anthony - Team Leader and Developer https://www.linkedin.com/in/anthonywongnz/
+* Minh - Lead Developer https://www.linkedin.com/in/minh-phu-lai/
+* Nicole - Data and Researcher https://www.linkedin.com/in/nicoleyuelin/
+* Tash  - Data and Researcher https://www.linkedin.com/in/tashbettridge/
 
 
 <a name="references"></a>
-## 09. References 
+## 09. References
 
 * https://www.stuff.co.nz/national/crime/117773380/how-you-could-be-fined-400-for-donating-to-an-op-shop
 * https://www.japantimes.co.jp/opinion/2020/05/02/commentary/world-commentary/thrift-shops-coronavirus/#.XxTPcZ4zaUk
